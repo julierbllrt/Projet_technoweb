@@ -1,5 +1,5 @@
 /* RENAULT Victorien et RAMANAH Maxime*/
-body
+body, button
 {
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
@@ -43,7 +43,6 @@ body
 
 
 button{
-	width:50px;
 	background-color: White;
 	border:none;
 	padding:5px;
@@ -67,9 +66,7 @@ section{
 
 #searchfield{
 	display:none;
-	
 	width:100%;
-	display: flex;
 	justify-content:center;
 	align-items:center;
 }
@@ -91,6 +88,53 @@ section{
 	height:5%;
 	padding:6px;
 	margin:10px;
+}
+
+#form{
+	display:none;
+}
+
+form{
+	flex-direction: column;
+	justify-content: center;		 
+	align-items: center;
+	width: 306px;
+	height: 420px;
+	background: Gainsboro ; 
+	margin:auto;
+	border: 2px solid LightGrey;
+	text-align: center;
+}
+
+.id
+{
+	margin: auto;
+	margin-top: 30px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+table
+{
+	font-family: 'Quicksand', sans-serif;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.buttonok
+{
+	font-family: 'Quicksand', sans-serif;
+	padding: 4px;
+	background: WhiteSmoke;
+	border: 2px solid LightGrey;
+	border-radius: 6px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.buttonok:hover
+{
+	background: White;
 }
 
 footer
