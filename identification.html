@@ -32,9 +32,9 @@ AUTHOR : MATTE FLORIAN
 		</header>
 		
 		<section >
-			<form >
+			<form method="POST" action="./traitement_id.php">
 				
-					<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png'>
+					<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png' />
 				
 				
 					<p class="id">Veuillez vous identifier</p>
@@ -42,16 +42,17 @@ AUTHOR : MATTE FLORIAN
 						<tbody>
 							<tr>
 								<td>Pseudo :</td>
-								<td><input type=text name="pseudo" size=15></td>
+								<td><input type="text" name="pseudo" size="15"/></td>
 							</tr>
 							<tr>
 								<td>Password :</td>
-								<td><input type=text name="password" size=15></td>
+								<td><input type="text" name="password" size="15"/></td>
 							</tr>
 						</tbody>
 					</table>
 					<p></p>
-					<a href="./recherche.html" class="button"> Valider </a>
+					
+					<input class="button" type="submit"/> 
 				
 				
 			</form>
