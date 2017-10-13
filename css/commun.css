@@ -28,16 +28,33 @@ body
 }
 
 .element_header:nth-child(3){
-	text-align: right;
+	text-align:right;
 	flex:1;
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+	
+}
+
+#search{
+	width:40px;
+}
+
+
+
+button{
+	width:50px;
+	background-color: White;
+	border:none;
+	padding:5px;
+	margin:10px;
 	
 }
 
 section{
 	min-height: calc(100vh - 160px);
 	flex:1;
-	align-self: center;	
-	#background:pink;
+	align-self: center;
 	
 	display: flex;
 	flex-wrap: nowrap;
@@ -46,6 +63,34 @@ section{
 	
 	margin-left:30px;
 	margin-right:30px;
+}
+
+#searchfield{
+	display:none;
+	
+	width:100%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#bouton_recherche
+{
+	display : block;
+	text-align : center;
+	font-family: 'Quicksand', sans-serif;
+	padding: 4px;
+	background: WhiteSmoke;
+	border: 2px solid LightGrey;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+#barrederecherche{
+	width:50%;
+	height:5%;
+	padding:6px;
+	margin:10px;
 }
 
 footer
@@ -71,7 +116,7 @@ a, a:visited{
 	color: black;					 
 }
 
-.basPage{ bouton Contact
+.basPage{ 
 	padding:6px;			 
 	text-align: center;
 	width: 15%;		
@@ -87,7 +132,8 @@ a, a:visited{
 .connexion {
 	padding:6px;	
 	text-align: center;
-	border-left:solid 1px LightGrey 		
+	align-items: center;	
+	border-left:solid 1px LightGrey 	;
 }
 
  

@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<link href="css/commun.css" rel="stylesheet" type="text/css"/>
+		<script src="js/index.js"/></script>
 	</head>
 	
 	<body>
@@ -17,12 +18,17 @@
 				<img class="logo" src="img/Logo.png"/>
 			</div>
 			<div class="element_header">
+				<button   onclick=recherche()><img  id="search" src="img/search.png"> </button>
 				<a href="identification.html" class="connexion"> Connexion </a>     
 			</div>
 		</header>
 		
 		<section>
-		
+			<div id="searchfield">
+				<input id="barrederecherche"     type="search"></input>
+				
+				<a id = "bouton_recherche"   name="recherche" href="produit.html">Recherche</a>
+			</div>
 			<!--CONTENU DE LA PAGE ICI-->
 		
 		</section>
