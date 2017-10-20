@@ -8,10 +8,10 @@ body, button
 
 #header
 {
-<<<<<<< HEAD
+
 	position:fixed;
 	background-color:white;
-=======
+
 
 	top:0;
 	left:0;
@@ -20,19 +20,19 @@ body, button
 	width:100%;
 	height: 10%;
 
->>>>>>> 180a70f9e2c8ce11033d80ebb976f46553e4e9c6
+
 	width:100%;
 	height: 80px;
 
 	border-bottom: 2px solid LightGrey;       
 	box-shadow: 0px 2px 5px  LightGrey;
 	text-align: center; 	
-<<<<<<< HEAD
+
 	top:0;
-=======
+
 	z-index:2;
 	
->>>>>>> 180a70f9e2c8ce11033d80ebb976f46553e4e9c6
+
 	display:flex;
 	align-items: center;
 	flex-wrap: nowrap;
@@ -60,7 +60,9 @@ body, button
 	width:40px;
 }
 
-
+ul li{
+	list-style: none;
+}
 
 button{
 	background-color: White;
