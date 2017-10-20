@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!--PAUTY Louis et  PEREIRA Antoine-->
+
 <html>
 	<head>
-	       <title>Time Square</title>
-	       <link rel="stylesheet" href="css/style_produit.css" />
 		<link href="css/commun.css" rel="stylesheet" type="text/css"/>
+		<link href="css/main.css" rel="stylesheet" type="text/css"/>
 	</head>
 	
 	<body>
@@ -23,50 +22,26 @@
 				<button   onclick=showConnexion() class="connexion">Connexion </button>
 			</div>
 		</header>
-	    
-		<section >
 		
-			<div id="searchfield">
-				<input id="barrederecherche"     type="search"></input>
-				
-				<a id = "bouton_recherche"   name="recherche" href="produit.html">Recherche</a>
+		<section>
+		<div id="searchfield">
+			<input id="barrederecherche"     type="search"></input>
+			
+			<a id = "bouton_recherche"   name="recherche" href="produit.html">Recherche</a>
+		</div>
+		
+		<section>
+			<div id="carrousel">
+				<ul>
+					<li><img src="img/dior" /></li>
+					<li><img src="omega" /></li>
+					
+				</ul>
 			</div>
-			
-			<section>
-				<div id="carrousel">
-					<ul>
-						<li><img src="img/dior" /></li>
-						<li><img src="omega" /></li>
-						
-					</ul>
-				</div>
-			
-			</section>
-			
-			<section>
-				<div class="element">
-					<!-- UTILE NE PAS SUPPRIMER -->
-				</div>
-				
-				<div class="element">
-					<img id="photo" src="img/montre1.jpg">
-				</div>
-				
-				<div class="element">
-					<p id="Nom_Produit">Nom du produit</p>
-					Prix: 1500€</br></br>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn
-					are aliquam dui a mollis. Sed ut feugiat diam. Nam eu ipsum auctor, pos
-					uere augue finibus, tempor enim. Donec condimentum dignissim sapie
-					n sed viverra.
-				</div>
-				
-				<div class="element">
-					<!-- UTILE NE PAS SUPPRIMER -->
-				</div>
-				
-			</section>
 		
+		</section>
+			
+			<!--CONTENU DE LA PAGE ICI-->
 			
 			<form  id="form" method="POST" action="./php/traitement_id.php">
 				<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png' />
@@ -86,10 +61,9 @@
 				<p></p>
 				<input class="button" type="submit"/> 				
 			</form>
-		
 			
 		</section>
-	
+		
 		<footer>
 			<a href="#"  class="basPage" >Contact</a>
 		</footer>
@@ -97,6 +71,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="js/index.js"/></script>
 		<script src="js/main.js"/></script>
-	
+		
 	</body>
 </html>
