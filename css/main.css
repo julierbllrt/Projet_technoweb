@@ -1,0 +1,12 @@
+#carrousel{
+    position:relative;
+    height:300px;
+    width:700px;
+    margin:auto;
+}
+#carrousel ul li{
+	list-style:none;
+    position:absolute;
+    top:0;
+    left:0;
+}

@@ -7,10 +7,11 @@ AUTHOR : MATTE FLORIAN
 			  
 <html>
 	<head>
-	
 		<title>Error</title>
-		<link rel="stylesheet" href="css/identification.css"/>
-		<link rel="stylesheet" href="css/commun.css"/>
+		<link href="css/commun.css" rel="stylesheet" type="text/css"/>
+		<script src="js/index.js"/></script>
+		<link rel="stylesheet" href="css/error.css"/>
+
 
 	
 	<head>
@@ -27,14 +28,25 @@ AUTHOR : MATTE FLORIAN
 				<img class="logo" src="img/Logo.png"/>
 			</div>
 			<div class="element_header">
-				<a href="identification.html" class="connexion"> Connexion </a>     
+				<button   onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
+				<button   onclick=showConnexion() class="connexion">Connexion </button>
 			</div>
 		</header>
 		
 		<section>
-			<p> Votre nom d'utilisateur ou mot de passe est incorrect</p>
-			<a href="./identification.html" class="button">Retour</a>
-			<a href="./" class="button">S'inscrire</a>
+			<form>
+				<table>
+					<tbody>
+						<thead>
+							<td colspan="2"><p> Votre nom d'utilisateur ou mot de passe est incorrect.</p></td>
+						</thead>
+						<tr>
+							<td><a href="./commun.html" class="button">Retour</a></td>
+							<td><a href="./inscription.html" class="button">S'inscrire</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
 		</section>
 		
 		

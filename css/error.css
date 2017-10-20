@@ -1,0 +1,45 @@
+/*
+VERSION : 1.0
+DATE : 13/10/17
+AUTHOR : MATTE FLORIAN
+			MERCIER-CHAUVE Julien -->
+*/
+
+table
+{
+	font-family: 'Quicksand', sans-serif;
+	margin: auto;
+	margin-top: 10px;
+	border: 3px;
+	justify-content: center;
+	color: red;
+}
+
+.button
+{
+	font-family: 'Quicksand', sans-serif;
+	padding: 6px;
+	background: WhiteSmoke;
+	border: 2px solid LightGrey;
+	border-radius: 6px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button:hover
+{
+	background: White;
+}
+
+form{
+	display:block;
+	flex-direction: column;
+	justify-content: center;		 
+	align-items: center;
+	width: 306px;
+	height: 150px;
+	background: Gainsboro ; 
+	margin:auto;
+	border: 2px solid LightGrey;
+	text-align: center;
+}
