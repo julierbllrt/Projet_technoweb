@@ -33,12 +33,12 @@
 			$reponse->closeCursor(); // Termine le traitement de la requête
 			
 			if ($isFound==1){
-				header('Location: ./recherche.html');
+				header('Location: ../commun.html');
 				exit();
 			}
 			else{
 				echo "NON";
-				header('Location: ./error.html');
+				header('Location: ../error.html');
 				exit();
 			}
 		?>
