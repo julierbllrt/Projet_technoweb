@@ -98,6 +98,8 @@ a, a:visited{
 	flex:1;
 	align-self: center;
 	
+	top:10%;
+	bottom:90%;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
