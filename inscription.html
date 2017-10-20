@@ -1,4 +1,12 @@
+
 <!DOCTYPE html>
+
+<!-- 
+VERSION : 1.0
+DATE : 20/10/17
+AUTHOR : MATTE FLORIAN
+			  MERCIER-CHAUVE Julien -->
+
 <html>
 	<head>
 		<link href="css/commun.css" rel="stylesheet" type="text/css"/>
@@ -27,7 +35,7 @@
 			</div>
 		</header>
 		
-			<section>
+			<section id="page">
 				<form  id="form" method="POST" action="./php/inscription.php">
 					<p class="id">Inscription</p>
 					<table>
@@ -42,13 +50,16 @@
 								<td>Choisissez votre Password :</td>
 							</tr>
 							<tr>
-								<td><input type="text" name="password" size="40"/></td>
+								<td>(6 characteres minimum)</td>
+							</tr>
+							<tr>
+								<td><input type="password" name="password" size="40"/></td>
 							</tr>
 							<tr>
 								<td>Confirmez votre Password :</td>
 							</tr>
 							<tr>
-								<td><input type="text" name="confirmation" size="40"/></td>
+								<td><input type="password" name="confirmation" size="40"/></td>
 							</tr>
 						</tbody>
 					</table>
