@@ -20,6 +20,15 @@
 			<div class="element_header">
 				<button   onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
 				<button   onclick=showConnexion() class="connexion">Connexion </button>
+				<div class="dropdown">
+					<div id="cart">
+					<p><span id="in-cart-items-num">0</span> Article(s)</p>
+					</div>
+						<ul id="cart-dropdown" hidden>
+						<li id="empty-cart-msg"><a>Panier vide</a></li>
+						<li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>    <!-- lien vers le panier -->
+						</ul>
+				</div>
 			</div>
 		</header>
 		
@@ -34,7 +43,6 @@
 			
 			<div id="carrousel">
 				<div class="controls">
-					
 					<ul>
 						<li><img src="img/dior.jpg" /></li>
 						<li><img src="img/omega.jpg" /></li>
@@ -76,6 +84,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="js/index.js"/></script>
 		<script src="js/main.js"/></script>
+		<script src="js/panier.js"/></script>
 		
 	</body>
 </html>
