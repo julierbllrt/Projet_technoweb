@@ -23,24 +23,29 @@
 			</div>
 		</header>
 		
-		<section>
-		<div id="searchfield">
-			<input id="barrederecherche"     type="search"></input>
-			
-			<a id = "bouton_recherche"   name="recherche" href="produit.html">Recherche</a>
-		</div>
-		
-		<section>
-			<div id="carrousel">
-				<ul>
-					<li><img src="img/dior" /></li>
-					<li><img src="omega" /></li>
-					
-				</ul>
+		<section id ="page">
+			<div id="searchfield">
+				<input id="barrederecherche"     type="search"></input>
+				
+				<a id = "bouton_recherche"   name="recherche" href="produit.html">Recherche</a>
 			</div>
-		
-		</section>
 			
+			
+			
+			<div id="carrousel">
+				<div class="controls">
+					
+					<ul>
+						<li><img src="img/dior.jpg" /></li>
+						<li><img src="img/omega.jpg" /></li>
+					</ul>
+					<span class="prev">Precedent</span> 
+					<span class="next">Suivant</span> 
+				</div>	
+			</div>
+			
+		
+				
 			<!--CONTENU DE LA PAGE ICI-->
 			
 			<form  id="form" method="POST" action="./php/traitement_id.php">
