@@ -1,25 +1,250 @@
-#carrousel{
-       position:relative;
-       max-height:50%;
-       width:100%;
-       margin:auto;
-	background-color:blue;
-	z-index:1;
-	top
+/*BODY*/
+body,button{
+	font-family: 'Quicksand', 'OpenSans',sans-serif;
+	font-size:1.2em;
+	#padding:30px;
+	#padding-top:10%;
+	background-color:Yellow;
 	
-}
-#carrousel ul li, #carrousel img{
-	
-	list-style: none;
-       position:absolute;
-	left:0;
-       top:0;
-       margin: 0;
-       padding: 0;
-	min-height: calc(100vh - 160px);
-       width:100%;
 }
 
-.control{
-	background-color:teal;
+button, .bouton{
+	font-family: 'Quicksand', 'OpenSans',sans-serif;
+	font-size:1.2em;
+	background-color: White;
+	border:none;
+	padding:5px;
+	margin:10px;
+	text-align: left;
+	
 }
+.bouton { /*bouton submit */
+	
+	border-right:solid 1px LightGrey		 
+}
+
+/*HEADER*/
+#header
+{
+	top:0;
+	left:0;
+	position:fixed;
+	#background-color:White;
+	width:100%;
+	height: 15%;
+
+	border-bottom: 2px solid LightGrey;       
+	box-shadow: 0px 2px 5px  LightGrey;
+	text-align: center; 	
+
+	z-index:2;
+	
+	display:flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	
+}
+
+.logo{ 
+	margin: auto;				 
+	height:60px;	
+}
+
+.element_header:nth-child(1){
+	text-align: left;
+	flex:1;
+}
+
+.element_header:nth-child(2){
+	align-self: center;	
+}
+
+.element_header:nth-child(3){
+	text-align:right;
+	flex:1;
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+	
+}
+
+#search{ /*loupe*/
+	width:40px;
+}
+
+ul, li{  /*panier liste*/
+	list-style: none;
+	padding: 0;
+       margin: 0;
+	width:100%;
+}
+
+.connexion {
+	padding:6px;	
+	text-align: center;
+	align-items: center;	
+	border-left:solid 1px LightGrey 	;
+}
+
+a, a:visited{	/*lien bouton*/					 
+	text-decoration:none;		 
+	color: black;					 
+}
+
+/*FIN HEADER*/
+
+
+
+/*PAGE*/
+#page{
+	position:fixed;
+	top:15%;
+	bottom:10%;
+	
+	background-color: LightGrey;
+
+	min-height: calc(100vh - 140px);
+	#max-height: calc(100vh - 150px);
+	flex:1;
+	align-self: center;
+	
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	
+	#margin-top:10%;
+	
+	#margin-bottom: 60%;
+}
+/*Barre de recherche*/
+#searchfield{
+	background-color:pink;
+	display:none;
+	width:100%;
+	justify-content:center;
+	align-items:center;
+}
+
+#bouton_recherche
+{
+	display : block;
+	text-align : center;
+	font-family: 'Quicksand', sans-serif;
+	padding: 4px;
+	background: WhiteSmoke;
+	border: 2px solid LightGrey;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+#barrederecherche{
+	width:50%;
+	height:5%;
+	padding:6px;
+	margin:10px;
+}
+/*fin barre de recherche*/
+
+/*formulaire connexion*/
+#form{
+	display:none;
+}
+
+form{
+	flex-direction: column;
+	justify-content: center;		 
+	align-items: center;
+	width: 306px;
+	height: 420px;
+	background: Gainsboro ; 
+	margin:auto;
+	border: 2px solid LightGrey;
+	text-align: center;
+}
+
+.id
+{
+	margin: auto;
+	margin-top: 30px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+table
+{
+	font-family: 'Quicksand', sans-serif;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.buttonok
+{
+	font-family: 'Quicksand', sans-serif;
+	padding: 4px;
+	background: WhiteSmoke;
+	border: 2px solid LightGrey;
+	border-radius: 6px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.buttonok:hover
+{
+	background: White;
+}
+/*fin formulaire connexion*/
+
+/*carrousel*/
+.control{
+	padding:0;
+	margin:0;
+}
+#carrousel{
+	max-height:calc(100vh - 140px);
+       width:100%;
+	background-color:blue;
+	z-index:1;
+	
+}
+
+#carrousel img{
+       width:100%;
+}
+/* fin carrousel*/
+
+/*FOOTER*/
+.basPage{ 
+	padding:6px;			 
+	text-align: center;
+	width: 15%;
+	margin-bottom:3%;
+}
+
+
+
+footer
+{
+	left:0;
+	position:fixed;
+	#background-color: White;
+	z-index:2;
+	border-top: 2px solid LightGrey;       
+	box-shadow: 0px -2px  5px LightGrey;
+	bottom:0px;				 
+	width:100%;
+	height:10%;
+	display:flex;			 
+	justify-content: center;		 
+	align-items: center;		
+}
+/*FIN FOOTER*/
+
+
+/*PANIER*/
+.dropdown:hover > #cart-dropdown{
+  display: block;
+}
+
+
