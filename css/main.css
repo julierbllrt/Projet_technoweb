@@ -2,6 +2,7 @@
 body{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
+	padding-top:10%;
 }
 
 button, .bouton, .connexion{
@@ -103,6 +104,8 @@ a, a:visited{	/*lien bouton*/
 	flex:1;
 	align-self: center;
 	
+	width:100%;
+	
 	
 	display: flex;
 	flex-wrap: nowrap;
@@ -114,9 +117,16 @@ a, a:visited{	/*lien bouton*/
 	margin-bottom: 10%;
 }
 /*Barre de recherche*/
-#searchfield{
-	#background-color: Pink;
+#searchfield{  /*pour main*/
+	
 	display:none;
+	width:100%;
+	justify-content:center;
+	align-items:center;
+}
+
+.searchfield{  /*pour fichier recherche*/
+	
 	width:100%;
 	justify-content:center;
 	align-items:center;
@@ -124,7 +134,7 @@ a, a:visited{	/*lien bouton*/
 
 #bouton_recherche
 {
-	display : block;
+	display : flex;
 	text-align : center;
 	font-family: 'Quicksand', sans-serif;
 	padding: 4px;
@@ -132,6 +142,14 @@ a, a:visited{	/*lien bouton*/
 	border: 2px solid LightGrey;
 	border-radius: 6px;
 	text-decoration: none;
+}
+
+form{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
 }
 
 #barrederecherche{
@@ -143,17 +161,16 @@ a, a:visited{	/*lien bouton*/
 /*fin barre de recherche*/
 
 /*formulaire connexion*/
+
+
 #form{
 	display:none;
-}
-
-form{
 	flex-direction: column;
 	justify-content: center;		 
 	align-items: center;
 	width: 306px;
 	height: 420px;
-	background: Gainsboro ; 
+	#background: Gainsboro ; 
 	margin:auto;
 	border: 2px solid LightGrey;
 	text-align: center;

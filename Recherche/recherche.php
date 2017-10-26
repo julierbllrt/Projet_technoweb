@@ -1,41 +1,32 @@
 <!DOCTYPE html>
-<!--POIRET Robin et  PEPIN Benoit-->
+
 <html>
 	<head>
 	
-		<link rel="stylesheet" href="css/cssrecherche.css" />
-		<link href="css/commun.css" rel="stylesheet" type="text/css"/>
+		<?php include('../head.php'); ?> 
 		
-		
-
 	</head>
 	<body>
 	
-		<header id="header">
-			<div class="element_header">
-				<a href="produit.html" class="redirect1 bouton"> Produit</a>
-				<a href="#" class="redirect2 bouton"> Lien 2</a>			<!-- lien des pages à compléter-->
-				<a href="#" class="redirect3 bouton"> Lien 3</a>		
-			</div>
-			<div class="element_header">
-				<img class="logo" src="img/Logo.png"/>
-			</div>
-			<div class="element_header">
-				<a href="identification.html" class="connexion"> Connexion </a>     
-			</div>
-		</header>
+		<style>
+			<?php include('../css/main.css'); ?> 
+		</style>
+	
+		<?php include('../header.php'); ?> 
 		
 		
-		<section>
-			<div class="tout">
-			
-				
+		<section id ="page">
+
+				<?php include('../section.php'); ?> 
+		
+			<div class="searchfield">
+							
 				<form method="post" action="testBenoit.php">
-				<p>
+
 					<input id="barrederecherche" name="recherche"  role="textbox"   type="text" ></input>
-					<input type="submit" value="Valider" />
+					<input  id="bouton_recherche" type="submit" value="Valider" />
 				
-				</p>
+				
 				</form>
 				
 			</div>
@@ -43,12 +34,10 @@
 			
 		</section>
 		
+		<?php include('../footer.php'); ?> 
+		
 
 	</body>
-	
-	<footer>
-		<a href="#" id="footertitle" class="basPage" >Contact</a>
-	</footer>
 
 	
 

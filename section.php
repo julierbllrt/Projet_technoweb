@@ -5,19 +5,6 @@
 		<a id = "bouton_recherche"   name="recherche" href="produit.html">Recherche</a>
 	</div>
 
-
-	<div id="carrousel">
-		<div class="controls">
-			<ul>
-				<li><img src="img/dior.jpg" /></li>
-				<li><img src="img/omega.jpg" /></li>
-			</ul>
-			<span class="prev">Precedent</span> 
-			<span class="next">Suivant</span> 
-		</div>	
-	</div>
-
-
 	<form  id="form" method="POST" action="./php/traitement_id.php">
 		<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png' />
 		<p class="id">Veuillez vous identifier</p>
