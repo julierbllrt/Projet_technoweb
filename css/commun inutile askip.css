@@ -1,35 +1,20 @@
-/*BODY*/
-body,button{
+/* RENAULT Victorien et RAMANAH Maxime*/
+body, button
+{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
-	#padding:30px;
+	padding:30px;
 	#padding-top:10%;
-	#background-color:Yellow;
+	background-color:Yellow;
 	
 }
 
-button, .bouton{
-	font-family: 'Quicksand', 'OpenSans',sans-serif;
-	font-size:1.2em;
-	background-color: White;
-	border:none;
-	padding:5px;
-	margin:10px;
-	text-align: left;
-	
-}
-.bouton { /*bouton submit */
-	
-	border-right:solid 1px LightGrey		 
-}
-
-/*HEADER*/
 #header
 {
 	top:0;
 	left:0;
 	position:fixed;
-	background-color:White;
+	#background-color:White;
 	width:100%;
 	height: 15%;
 
@@ -37,20 +22,16 @@ button, .bouton{
 	box-shadow: 0px 2px 5px  LightGrey;
 	text-align: center; 	
 
+	top:0;
+
 	z-index:2;
 	
+
 	display:flex;
 	align-items: center;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	
 }
-
-.logo{ 
-	margin: auto;				 
-	height:60px;	
-}
-
 .element_header:nth-child(1){
 	text-align: left;
 	flex:1;
@@ -69,15 +50,28 @@ button, .bouton{
 	
 }
 
-#search{ /*loupe*/
+#search{
 	width:40px;
 }
 
-ul, li{  /*panier liste*/
+ul li{
 	list-style: none;
 	padding: 0;
        margin: 0;
-	width:100%;
+}
+
+button{
+	background-color: White;
+	border:none;
+	padding:5px;
+	margin:10px;
+	
+}
+
+
+.logo{ 
+	margin: auto;				 
+	height:60px;	
 }
 
 .connexion {
@@ -87,35 +81,29 @@ ul, li{  /*panier liste*/
 	border-left:solid 1px LightGrey 	;
 }
 
-a, a:visited{	/*lien bouton*/					 
+a, a:visited{						 
 	text-decoration:none;		 
 	color: black;					 
 }
 
-/*FIN HEADER*/
-
-
-
-/*PAGE*/
-#page{	
+#page{
 	background-color: LightGrey;
 
 	min-height: calc(100vh - 140px);
-	max-height: calc(100vh - 150px);
+	#max-height: calc(100vh - 150px);
 	flex:1;
 	align-self: center;
-	
 	
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
 	
-	margin-top:8%;
+	#margin-top:10%;
 	
-	margin-bottom: 10%;
+	#margin-bottom: 60%;
 }
-/*Barre de recherche*/
+
 #searchfield{
 	background-color:pink;
 	display:none;
@@ -142,9 +130,7 @@ a, a:visited{	/*lien bouton*/
 	padding:6px;
 	margin:10px;
 }
-/*fin barre de recherche*/
 
-/*formulaire connexion*/
 #form{
 	display:none;
 }
@@ -191,39 +177,37 @@ table
 {
 	background: White;
 }
-/*fin formulaire connexion*/
 
-/*carrousel*/
-.control{
-	padding:auto;
-	margin:auto;
-}
-#carrousel{
-	max-height:calc(100vh - 140px);
-       width:100%;
-	background-color:blue;
-	z-index:1;
-	
-	
+.logo{ 
+	margin: auto;				 
+	height:60px;	
 }
 
-#carrousel img{
-       width:100%;
+a, a:visited{						 
+	text-decoration:none;		 
+	color: black;					 
 }
-/* fin carrousel*/
 
-/*FOOTER*/
 .basPage{ 
 	padding:6px;			 
 	text-align: center;
 	width: 15%;
+	margin-bottom:3%;
 }
+
+.bouton {
+	padding:6px ;			 
+	text-align: left;
+	width: 70px;
+	border-right:solid 1px LightGrey		 
+}
+
 
 footer
 {
 	left:0;
 	position:fixed;
-	background-color: White;
+	#background-color: White;
 	z-index:2;
 	border-top: 2px solid LightGrey;       
 	box-shadow: 0px -2px  5px LightGrey;
@@ -234,12 +218,17 @@ footer
 	justify-content: center;		 
 	align-items: center;		
 }
-/*FIN FOOTER*/
+.connexion
+{
+	padding: 6px;	
+	text-align: center;
+	align-items: center;	
+	border-left:solid 1px LightGrey 	;
 
+}
 
 /*PANIER*/
 .dropdown:hover > #cart-dropdown{
   display: block;
 }
-
-
+ 

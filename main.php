@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<style>
-			<?php include('css/main.php'); ?>
+			<?php include('css/main.css'); ?>
 		</style>
 	
 		<?php include('header.php'); ?>
