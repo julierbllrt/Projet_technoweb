@@ -11,7 +11,11 @@
 		</style>
 	
 		<?php include('header.php'); ?>
-		<?php include('section.php'); ?>
+		
+		<section id = "page">
+			<?php include('section.php'); ?>	
+		</section>
+		
 		<?php include('footer.php'); ?>
 	</body>
 

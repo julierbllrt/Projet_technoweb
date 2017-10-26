@@ -1,6 +1,4 @@
 
-		
-<section id ="page">
 	<div id="searchfield">
 		<input id="barrederecherche"     type="search"></input>
 		
@@ -19,9 +17,6 @@
 		</div>	
 	</div>
 
-
-		
-	<!--CONTENU DE LA PAGE ICI-->
 
 	<form  id="form" method="POST" action="./php/traitement_id.php">
 		<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png' />
@@ -42,4 +37,3 @@
 		<input class="button" type="submit"/> 				
 	</form>
 
-</section>

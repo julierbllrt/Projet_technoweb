@@ -1,26 +1,29 @@
 /*BODY*/
-body,button{
+body{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
-	#padding:30px;
-	#padding-top:10%;
-	#background-color:Yellow;
-	
 }
 
-button, .bouton{
+button, .bouton, .connexion{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
 	background-color: White;
 	border:none;
-	padding:5px;
-	margin:10px;
-	text-align: left;
+	padding:6px;
+	
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
 	
 }
-.bouton { /*bouton submit */
+.bouton { /*bouton lien header */
 	
 	border-right:solid 1px LightGrey		 
+}
+
+.connexion {
+
+	border-left:solid 1px LightGrey 	;
 }
 
 /*HEADER*/
@@ -61,7 +64,7 @@ button, .bouton{
 }
 
 .element_header:nth-child(3){
-	text-align:right;
+	
 	flex:1;
 	display: flex;
 	justify-content:flex-end;
@@ -80,12 +83,7 @@ ul, li{  /*panier liste*/
 	width:100%;
 }
 
-.connexion {
-	padding:6px;	
-	text-align: center;
-	align-items: center;	
-	border-left:solid 1px LightGrey 	;
-}
+
 
 a, a:visited{	/*lien bouton*/					 
 	text-decoration:none;		 
@@ -98,7 +96,7 @@ a, a:visited{	/*lien bouton*/
 
 /*PAGE*/
 #page{	
-	background-color: LightGrey;
+	#background-color: LightGrey;
 
 	min-height: calc(100vh - 140px);
 	max-height: calc(100vh - 150px);
@@ -117,7 +115,7 @@ a, a:visited{	/*lien bouton*/
 }
 /*Barre de recherche*/
 #searchfield{
-	background-color:pink;
+	#background-color: Pink;
 	display:none;
 	width:100%;
 	justify-content:center;
@@ -197,14 +195,20 @@ table
 .control{
 	padding:auto;
 	margin:auto;
+	
+	
+}
+.next, .prev{
+	cursor: pointer;
+	display:flex;
+	
+	
 }
 #carrousel{
-	max-height:calc(100vh - 140px);
+	max-height:calc(100vh -200px);
        width:100%;
-	background-color:blue;
+	#background-color: Blue;
 	z-index:1;
-	
-	
 }
 
 #carrousel img{
@@ -239,7 +243,7 @@ footer
 
 /*PANIER*/
 .dropdown:hover > #cart-dropdown{
-  display: block;
+       display: block;
 }
 
 

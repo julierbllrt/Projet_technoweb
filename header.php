@@ -13,13 +13,14 @@
 		<button   onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
 		<button   onclick=showConnexion() class="connexion">Connexion </button>
 		<div class="dropdown">
-			<div id="cart">
-			<p><span id="in-cart-items-num">0</span> Article(s)</p>
+			<div id="cart" >
+				<p class="bouton" ><span id="in-cart-items-num" >0</span> Article(s)</p>
 			</div>
-				<ul id="cart-dropdown" hidden>
-				<li id="empty-cart-msg"><a>Panier vide</a></li>
-				<li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>    <!-- lien vers le panier -->
-				</ul>
+			<ul id="cart-dropdown" hidden>
+					<li id="empty-cart-msg"><a>Panier vide</a></li>
+					<li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>    <!-- lien vers le panier -->
+			</ul>
+			
 		</div>
 	</div>
 </header>
