@@ -26,8 +26,8 @@
 							<td colspan="2"><p> Votre nom d'utilisateur ou mot de passe est incorrect.</p></td>
 						</thead>
 						<tr>
-							<td><a href="./commun.html" class="button">Retour</a></td>
-							<td><a href="./inscription.html" class="button">S'inscrire</a></td>
+							<td><a href="./main.php" class="button">Retour</a></td>
+							<td><a href="./inscription.php" class="button">S'inscrire</a></td>
 						</tr>
 					</tbody>
 				</table>

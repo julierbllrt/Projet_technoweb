@@ -14,8 +14,8 @@
 			//Connect
 			try
 			{
-				$bdd = new PDO('mysql:host=localhost;dbname=identification;charset=utf8', 'root', '');
-				$reponse = $bdd->query('SELECT * FROM identification.identification');
+				$bdd = new PDO('mysql:host=localhost;dbname=magasinmontre;charset=utf8', 'root', '');
+				$reponse = $bdd->query('SELECT * FROM magasinmontre.identification');
 				echo "I'm in";
 			}
 			catch (Exception $e)
@@ -33,17 +33,21 @@
 			$reponse->closeCursor(); // Termine le traitement de la requête
 			
 			if ($isFound==1){
-				header('Location: ../commun.html');
+				session_start ();
+				// on enregistre les paramètres de notre visiteur comme variables de session ($login et $pwd) (notez bien que l'on utilise pas le $ pour enregistrer ces variables)
+				$_SESSION['pseudo'] = $_POST['pseudo'];
+				$_SESSION['password'] = $_POST['password'];
+				header('Location: ../main.php');
 				exit();
 			}
 			else{
 				echo "NON";
-				header('Location: ../error.html');
+				header('Location: ../error.php');
 				exit();
 			}
 		?>
 		
 		
-		<a href="./identification.html">back</a>
+		<a href="../section.php">back</a>
     </body>
 </html>

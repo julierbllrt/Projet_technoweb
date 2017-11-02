@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<?php session_start (); ?>
 <html >
 
 	<head>
@@ -11,6 +11,7 @@
 		</style>
 	
 		<?php include('header.php'); ?>
+		
 		
 		<section id = "page">
 			<?php include('section.php'); ?>	

@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 20 oct. 2017 à 14:23
--- Version du serveur :  5.7.19
+-- Généré le :  jeu. 02 nov. 2017 à 15:23
+-- Version du serveur :  5.7.10-log
 -- Version de PHP :  5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -21,6 +21,27 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `magasinmontre`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `identification`
+--
+
+DROP TABLE IF EXISTS `identification`;
+CREATE TABLE IF NOT EXISTS `identification` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pseudo` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `identification`
+--
+
+INSERT INTO `identification` (`id`, `pseudo`, `password`) VALUES
+(1, 'florian', 'matte');
 
 -- --------------------------------------------------------
 
