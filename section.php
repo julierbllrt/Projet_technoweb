@@ -1,9 +1,10 @@
 
-	<div id="searchfield">
-		<input id="barrederecherche"     type="search"></input>
-		
-		<a id = "bouton_recherche"   name="recherche" href="produit.html">Recherche</a>
-	</div>
+	<form id="searchfield" method="post" action="testBenoit.php">
+
+		<input id="barrederecherche" name="recherche"  role="textbox"   type="text" ></input>
+		<input  id="bouton_recherche" type="submit" value="Recherche" />
+
+	</form>
 
 	<form  id="form" method="POST" action="./php/traitement_id.php">
 		<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png' />
