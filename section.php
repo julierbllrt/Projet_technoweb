@@ -1,5 +1,5 @@
 
-	<form id="searchfield" method="post" action="testBenoit.php">
+	<form id="searchfield" method="post" action="main.php">
 
 		<input id="barrederecherche" name="recherche"  role="textbox"   type="text" ></input>
 		<input  id="bouton_recherche" type="submit" value="Recherche" />

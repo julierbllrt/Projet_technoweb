@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-
-<head>
-	<link rel="stylesheet" type="text/css" href="../recherche.css">
-</head> 
-
-<body>	
+<div id='testbenoit'> 
 	<?php
 
 	echo "Celle-ci a été écrite entièrement en PHP.";
@@ -37,5 +31,5 @@
 	$reponse->closeCursor(); // Termine le traitement de la requête
 		
 	?>
-</body>
+</div>
 

@@ -15,6 +15,9 @@
 		
 		<section id = "page">
 			<?php include('section.php'); ?>	
+			<?php include('carrousel.php');?>
+			<?php include('testBenoit.php');?>
+			
 		</section>
 		
 		<?php include('footer.php'); ?>
