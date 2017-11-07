@@ -1,10 +1,12 @@
 
-	<form id="searchfield" method="post" action="main.php">
+	<form id='searchfield' method="post" action="result.php">
 
-		<input id="barrederecherche" name="recherche"  role="textbox"   type="text" ></input>
-		<input  id="bouton_recherche" type="submit" value="Recherche" />
-
+					<input id="barrederecherche" name="recherche"  role="textbox"   type="text" ></input>
+					<input  id="bouton_recherche" type="submit" value="Valider" />
+				
+				
 	</form>
+				
 
 	<form  id="form" method="POST" action="./php/traitement_id.php">
 		<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png' />
