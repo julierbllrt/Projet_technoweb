@@ -1,13 +1,8 @@
-
-<head>
-		<?php include('head.php'); ?>
-</head>
+	<section id='result'>
 	
-<body>
 	<style>
-		<?php include('css/resultat.css'); ?>		
+		<?php include('css/resultat.css');?>
 	</style>
-		
 		<h1>
 			Le resultat de vos recherches :
 		</h1>
@@ -34,13 +29,13 @@
 			<div id='test'> 
 			<p>Nom du produit : <?php echo $donnees['ProduitNom'];?></p>
 			<p>La marque du produit :  <?php echo $donnees['Marque']; ?> au prix de  <?php echo $donnees['Prix'] ; ?> € </p>
-			
+			<p></p>
 			</div>
 			<?php
 			}
 			$reponse->closeCursor(); // Termine le traitement de la requête
 				
 			?>
-</body>
+	</section>
 	
 	
