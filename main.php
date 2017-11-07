@@ -16,7 +16,7 @@
 		<section id = "page">
 			<?php include('section.php'); ?>	
 			<?php include('carrousel.php');?>
-			<?php include('testBenoit.php');?>
+			<?php include('result.php');?>
 			
 		</section>
 		
