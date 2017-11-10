@@ -1,13 +1,13 @@
 
 <header id="header">
 	<div class="element_header">
-		<a href="produit.html" class="redirect1 bouton"> Produit</a>
+		<a href="produit.php" class="redirect1 bouton"> Produit</a>
 		<a href="#" class="redirect2 bouton"> Lien 2</a>			<!-- lien des pages à compléter-->
 		<a href="#" class="redirect3 bouton"> Lien 3</a>
 		<?php ?>
 	</div>
 	<div class="element_header">
-		<img class="logo" src="img/Logo.png"/>
+		<a href="main.php"><img class="logo" src="img/Logo.png"/></a>
 	</div>
 	<div class="element_header">
 		<button   onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
