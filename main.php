@@ -11,6 +11,11 @@ if(!empty($_GET['action_result'])){
 	
 	/////La page sera result
 }
+if(!empty($_GET['action_detail'])){
+	$_currentAction = $_GET['action_detail'] ;
+	$_currentPage = 'produit' ;
+	
+}
 /////////////////////////////////////////////:
 
 ?>

@@ -1,11 +1,5 @@
-	<section id='result'>
+		<div class='result'>
 	
-	<style>
-		<?php include('css/resultat.css');
-		include (section.php);
-		?>
-		
-	</style>
 		<h1>
 			Le resultat de vos recherches :
 		</h1>
@@ -14,7 +8,7 @@
 			<?php
 			try{
 				// Sous WAMP (Windows)
-			$bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+			$bdd = new PDO('mysql:host=localhost;dbname=magasinmontre;charset=utf8', 'root', '');
 
 
 			}
@@ -30,8 +24,9 @@
 			while ($donnees = $reponse->fetch()){
 			?>
 			<div id='test'> 
-			<p>Nom du produit : <?php echo $donnees['ProduitNom'];?></p>
+			<p>Nom du produit : <a href="main.php?action_detail=detail&montreId=<?php echo $donnees['ProduitID'];?>"><?php echo $donnees['ProduitNom'];?></a></p>
 			<p>La marque du produit :  <?php echo $donnees['Marque']; ?> au prix de  <?php echo $donnees['Prix'] ; ?> € </p>
+			<img id='photo' src= "img/<?php  echo $donnees['Image']; ?> " />
 			<p></p>
 			</div>
 			<?php
@@ -39,6 +34,5 @@
 			$reponse->closeCursor(); // Termine le traitement de la requête
 				
 			?>
-	</section>
-	
+	</div>
 	
