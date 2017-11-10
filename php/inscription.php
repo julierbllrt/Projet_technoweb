@@ -13,8 +13,8 @@
 			//Connect
 			try
 			{
-				$bdd = new PDO('mysql:host=localhost;dbname=identification;charset=utf8', 'root', '');
-				$reponse = $bdd->query('SELECT * FROM identification.identification');
+				$bdd = new PDO('mysql:host=localhost;dbname=magasinmontre;charset=utf8', 'root', '');
+				$reponse = $bdd->query('SELECT * FROM magasinmontre.identification');
 			}
 			catch (Exception $e)
 			{
@@ -27,11 +27,11 @@
 				$req->execute(array(
 				'pseudo' => $pseudo,
 				'psw' => $psw));
-				header('Location: ../commun.html');
+				header('Location: ../merci.php');
 				exit();
 			}
 			else{
-				header('Location: ../error.html');
+				header('Location: ../error.php');
 				exit();
 			}
 			$reponse->closeCursor(); // Termine le traitement de la requête
