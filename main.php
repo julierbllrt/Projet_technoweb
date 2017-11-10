@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <?php session_start (); 
 
-$_currentAction = 'section' ;
-var_dump( $_GET);
+$_currentAction = 0 ;
+$_currentPage = 'carrousel';
+
+/////////////////////////////////////////////
 if(!empty($_GET['action_result'])){
 	$_currentAction = $_GET['action_result'] ;
+	$_currentPage = 'result' ;
+	
+	/////La page sera result
 }
-echo $_currentAction;
+/////////////////////////////////////////////:
+
 ?>
 <html >
 
 	<head>
 		<?php include('head.php'); ?>
+		<style>
+				<?php include('css/main.css');
+				include('carrousel.php');
+				include('section.php');
+				?>
+		</style>
 	</head>
 	<body>
-		<style>
-			<?php include('css/main.css'); ?>
-		</style>
+		
 	
 		<?php include('header.php'); ?>
 		
 		
 		<section id = "page">
-			<?php include($_currentAction .'.php'); ?>	
-			<?php include('carrousel.php');?>
-			<?php include('result.php');?>
-			
+			<?php include($_currentPage .'.php'); 
+			include('section.php'); ?>
 		</section>
 		
 		<?php include('footer.php'); ?>
