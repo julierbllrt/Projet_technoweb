@@ -2,7 +2,8 @@
 body{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
-	padding-top:10%;
+	padding-top:6%;
+	padding-bottom: 12%;
 }
 
 button, .bouton, .connexion{
@@ -112,9 +113,8 @@ a, a:visited{	/*lien bouton*/
 	justify-content: center;
 	align-items: center;
 	
-	margin-top:8%;
 	
-	margin-bottom: 10%;
+	
 }
 /*Barre de recherche*/
 #searchfield{  /*pour main*/
@@ -216,8 +216,6 @@ table
 .control{
 	padding:auto;
 	margin:auto;
-	
-	
 }
 .next, .prev{
 	cursor: pointer;
@@ -226,14 +224,13 @@ table
 	
 }
 #carrousel{
-	max-height:calc(100vh -200px);
-       width:100%;
-	#background-color: Blue;
 	z-index:1;
+	padding-top:15%;
+	#background-color:yellow;
 }
 
 #carrousel img{
-       width:100%;
+       #height:50px;
 }
 /* fin carrousel*/
 

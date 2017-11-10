@@ -43,7 +43,7 @@ $(document).ready(function(){
 	$currentImg = $img.eq(i); // enfin, on cible l'image courante, qui possède l'index i (0 pour l'instant)
 	
 	$img.css('display', 'none'); // on cache les images
-	$currentImg.css('display', 'block'); // on affiche seulement l'image courante
+	$currentImg.css('display', 'flex'); // on affiche seulement l'image courante
 	
 
 	$('.next').click(function(){ // image suivante
@@ -53,7 +53,7 @@ $(document).ready(function(){
 		if( i <= indexImg ){
 			$img.css('display', 'none'); // on cache les images
 			$currentImg = $img.eq(i); // on définit la nouvelle image
-			$currentImg.css('display', 'block'); // puis on l'affiche
+			$currentImg.css('display', 'flex'); // puis on l'affiche
 		}
 		else{
 			i = indexImg;
