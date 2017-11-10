@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+		<title>Inscription</title>
 		<?php include('head.php'); ?>
 	</head>
 	
@@ -17,7 +18,7 @@
 		<section id="page">
 			<?php include('section.php'); ?>
 		
-			<form  id="form" method="POST" action="./php/inscription.php">
+			<form  id="forminscription" method="POST" action="./php/inscription.php">
 				<p class="id">Inscription</p>
 				<table>
 					<tbody>

@@ -15,7 +15,7 @@
 			
 			if (isset($_SESSION['pseudo'])) {
 				echo '<p>Bonjour '.$_SESSION['pseudo'].'<br />' ;
-				echo '<a href="./php/logout.php">Déconnection</a>';
+				echo '<a href="./php/logout.php">Déconnexion</a>';
 			}
 			else{
 				echo '<button   onclick=showConnexion() class="connexion">Connexion </button>';
