@@ -1,7 +1,10 @@
 	<section id='result'>
 	
 	<style>
-		<?php include('css/resultat.css');?>
+		<?php include('css/resultat.css');
+		include (section.php);
+		?>
+		
 	</style>
 		<h1>
 			Le resultat de vos recherches :
