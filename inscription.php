@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
+
+
 <html>
+	<?php session_start(); ?>
 	<head>
 		<title>Inscription</title>
 		<?php include('head.php'); ?>
@@ -17,17 +20,25 @@
 		
 		<section id="page">
 			<?php include('section.php'); ?>
-		
+			
 			<form  id="forminscription" method="POST" action="./php/inscription.php">
 				<p class="id">Inscription</p>
 				<table>
 					<tbody>
 						<tr>
-							<td>Choisissez votre Pseudo :</td>
+							<td>Choisissez votre Pseudo : </td>
 						</tr>
 						<tr>
 							<td><input type="text" name="pseudo" size="40"/></td>
 						</tr>
+						<?php
+								if($_SESSION['errorInscription']){
+									echo '<tr id="error">';
+									echo '<td>Mot de passe incorrect</td>' ;
+									$_SESSION['errorInscription'] = False;
+									echo '</tr>';
+					       		}
+							?>
 						<tr>
 							<td>Choisissez votre Password :</td>
 						</tr>

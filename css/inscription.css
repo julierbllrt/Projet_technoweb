@@ -37,9 +37,13 @@ form{
 	justify-content: center;		 
 	align-items: center;
 	width: 350px;
-	height: 330px;
+	height: 345px;
 	background: Gainsboro ; 
 	margin:auto;
 	border: 2px solid LightGrey;
 	text-align: center;
+}
+
+#error{
+	color: red;
 }

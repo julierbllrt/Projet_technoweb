@@ -9,7 +9,7 @@
 			$psw = $_POST['password'];
 			$confirmation = $_POST['confirmation'];
 			
-			
+			session_start();
 			//Connect
 			try
 			{
@@ -27,11 +27,13 @@
 				$req->execute(array(
 				'pseudo' => $pseudo,
 				'psw' => $psw));
+				$_SESSION['errorInscription']=False;
 				header('Location: ../merci.php');
 				exit();
 			}
 			else{
-				header('Location: ../error.php');
+				$_SESSION['errorInscription']=True;
+				header('Location: ../inscription.php');
 				exit();
 			}
 			$reponse->closeCursor(); // Termine le traitement de la requête
