@@ -6,7 +6,8 @@
 
 	</form>
 
-	<form  id="form" method="POST" action="./php/traitement_id.php">
+	<form  id="form" method="POST" action="main.php?action_login=login">
+		<input type="hidden" name="action" value="/php/traitement_id" ?>
 		<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png' />
 		<p class="id">Veuillez vous identifier</p>
 		<table>
@@ -17,11 +18,14 @@
 				</tr>
 				<tr>
 					<td>Password :</td>
-					<td><input type="text" name="password" size="15"/></td>
+					<td><input type="psw" name="password" size="15"/></td>
 				</tr>
 			</tbody>
 		</table>
 		<p></p>
 		<input class="button" type="submit"/> 				
 	</form>
+
+	
+
 
