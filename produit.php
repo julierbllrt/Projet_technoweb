@@ -42,7 +42,8 @@
 							<p id="Nom_Produit">Nom du produit : <?php echo $donnees['ProduitNom'] ; ?> 
 							</br>Marque: <?php echo $donnees['Marque'] ; ?> </br>
 							Prix:<?php echo $donnees['Prix'] ; ?> </br>
-							<?php echo $donnees['Description'] ; ?></p>		
+							<?php echo $donnees['Description'] ; ?></p>	
+							<a href="panierFinal.php?action=ajout&amp;l=<?php echo $donnees['Marque'];?>&amp;q=1&amp; p=<?php echo $donnees['Prix'];?>;"  onclick="window.open(this.href, '', 'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=600, height=350'); return false;">Ajouter au panier</a>
 						</div>
 			<?php
 					}
