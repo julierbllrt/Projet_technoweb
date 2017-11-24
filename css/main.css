@@ -234,14 +234,30 @@ table
 }
 /* fin carrousel*/
 
-/**/
+/*result*/
+.result{
+	min-height: calc(100vh - 140px);
+	max-height: calc(100vh - 150px);
+	flex:1;
+	align-self: center;
+	width:75%;
+	
+	display: flex;
+	flex-direction:column;
+	
+	align-items: center;
+}
 
+.result img{
+	width:45%;
+}
 
-button{
+.result button{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
 	background-color: White;
-	border:none;
+	#border:none;
+	border-bottom: 2px solid Light Grey;
 	padding:6px;
 	
 	text-align:center;
@@ -250,7 +266,7 @@ button{
 	
 }
 
-/**/
+/*fin result*/
 
 
 /*FOOTER*/

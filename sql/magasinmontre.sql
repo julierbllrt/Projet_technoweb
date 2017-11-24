@@ -98,10 +98,10 @@ CREATE TABLE IF NOT EXISTS `stock` (
 --
 
 INSERT INTO `stock` (`Produit`, `ProduitID`, `Marque`, `Prix`, `Image`, `ProduitNom`, `Description`) VALUES
-('Montre', 1, 'Rolex', 1500, 'montre1.jpg', 'Montre_RO_UD44', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\n				are aliquam dui a mollis. Sed ut feugiat diam. Nam eu ipsum auctor, pos\r\n				uere augue finibus, tempor enim. Donec condimentum dignissim sapie\r\n				n sed viverra.'),
-('Montre', 2, 'Rolex', 800, 'montre2.jpg', 'Montre_RO-UF12', ''),
-('Montre', 3, 'Omega', 399, 'montre3.jpg', 'Montre_OM_85', ''),
-('Montre', 4, 'IWC', 149, 'montre4.jpg', 'Montre_IW_FG58', '');
+('Montre', 1, 'Rolex', 1500, 'montre1.jpg', 'Montre_RO_UD44', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\nare aliquam dui a mollis. Sed ut feugiat diam. Nam eu ipsum auctor, pos\r\n'),
+('Montre', 2, 'Rolex', 800, 'montre2.jpg', 'Montre_RO-UF12', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\n'),
+('Montre', 3, 'Omega', 399, 'montre3.jpg', 'Montre_OM_85',  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\n'),
+('Montre', 4, 'IWC', 149, 'montre4.jpg', 'Montre_IW_FG58',  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\n');
 
 --
 -- Contraintes pour les tables déchargées
