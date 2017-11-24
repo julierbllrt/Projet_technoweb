@@ -16,7 +16,7 @@ if(!empty($_GET['action_detail'])){
 	$_currentPage = 'produit' ;
 	
 }
-/////////////////////////////////////////////:
+//////////////////////////////////////////////
 
 ?>
 <html >
@@ -24,11 +24,12 @@ if(!empty($_GET['action_detail'])){
 	<head>
 		<?php include('head.php'); ?>
 		<style>
-				<?php include('css/main.css');
-				include('carrousel.php');
-				include('section.php');
-				?>
+				<?php include('css/main.css');?>
 		</style>
+		
+		<?phpinclude('carrousel.php');
+				include('section.php'); ?>
+		
 	</head>
 	<body>
 		

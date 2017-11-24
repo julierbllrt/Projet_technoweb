@@ -6,7 +6,7 @@ body{
 	padding-bottom: 12%;
 }
 
-button, .bouton, .connexion{
+.bouton, .connexion{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
 	background-color: White;
@@ -19,12 +19,10 @@ button, .bouton, .connexion{
 	
 }
 .bouton { /*bouton lien header */
-	
 	border-right:solid 1px LightGrey		 
 }
 
 .connexion {
-
 	border-left:solid 1px LightGrey 	;
 }
 
@@ -235,6 +233,25 @@ table
      
 }
 /* fin carrousel*/
+
+/**/
+
+
+button{
+	font-family: 'Quicksand', 'OpenSans',sans-serif;
+	font-size:1.2em;
+	background-color: White;
+	border:none;
+	padding:6px;
+	
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+
+/**/
+
 
 /*FOOTER*/
 .basPage{ 

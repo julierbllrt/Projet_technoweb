@@ -23,12 +23,16 @@
 
 			while ($donnees = $reponse->fetch()){
 			?>
+			<a  class="lien_produit" href="main.php?action_detail=detail&montreId=<?php echo $donnees['ProduitID'];?>">
+			<button>
 			<div id='test'> 
-			<p>Nom du produit : <a href="main.php?action_detail=detail&montreId=<?php echo $donnees['ProduitID'];?>"><?php echo $donnees['ProduitNom'];?></a></p>
-			<p>La marque du produit :  <?php echo $donnees['Marque']; ?> au prix de  <?php echo $donnees['Prix'] ; ?> € </p>
+			<p>Nom du produit : <?php echo $donnees['ProduitNom'];?></p>
+			<p>La marque du produit :  <?php echo $donnees['Marque']; ?>  prix:  <?php echo $donnees['Prix'] ; ?> € </p>
 			<img id='photo' src= "img/<?php  echo $donnees['Image']; ?> " />
 			<p></p>
 			</div>
+			</button>
+			</a>
 			<?php
 			}
 			$reponse->closeCursor(); // Termine le traitement de la requête
