@@ -21,11 +21,11 @@
 		?>
 		<div class="dropdown">
 			<div id="cart" >
-				<p class="bouton" ><span id="in-cart-items-num" ></span>Panier</p>
+				<p class="bouton">Panier</p>
 			</div>
 			<ul id="cart-dropdown" hidden>
-					<li id="empty-cart-msg"><a>Panier vide</a></li>
-					<!--<li class="go-to-cart hidden"><a href="panierFinal.php">Voir le panier</a></li>    <!-- lien vers le panier -->
+					<!--<li id="empty-cart-msg"><a>Panier vide</a></li>  -->
+					<li class="go-to-cart hidden"><a href="panierFinal.php">Voir le panier</a></li>    <!-- lien vers le panier -->
 			</ul>
 			
 		</div>
