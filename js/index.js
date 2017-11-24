@@ -27,13 +27,6 @@ function showConnexion() {
 }
 
 $(document).ready(function(){
-
-	document.getElementById("bouton_recherche").onclick = function() { showResult()};
-
-	function  showResult(){
-	       document.getElementById("testbenoit").style.display = "block";
-	}
-	
 	
 	var $carrousel = $('#carrousel'), // on cible le bloc du carrousel
 	$img = $('#carrousel img'), // on cible les images contenues dans le carrousel
