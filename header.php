@@ -10,7 +10,7 @@
 		<a href="main.php"><img class="logo" src="img/Logo.png"/></a>
 	</div>
 	<div class="element_header">
-		<button   onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
+		<button   class ="bouton" onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
 		<?php
 			
 			if (isset($_SESSION['pseudo'])) {
@@ -18,7 +18,7 @@
 				echo '<a href="./php/logout.php">Déconnexion</a>';
 			}
 			else{
-				echo '<button   onclick=showConnexion() class="connexion">Connexion </button>';
+				echo '<button class ="bouton"   onclick=showConnexion() class="connexion">Connexion </button>';
 			}
 		?>
 		<div class="dropdown">
