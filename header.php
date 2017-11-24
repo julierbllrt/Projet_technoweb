@@ -17,6 +17,7 @@
 			}
 			else{
 				echo '<button class ="bouton"   onclick=showConnexion() class="connexion">Connexion </button>';
+				//echo '<button class ="bouton"   onclick=showConnexion() class="connexion">S\'inscrire </button>';
 			}
 		?>
 		<div class="dropdown">

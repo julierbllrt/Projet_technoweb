@@ -18,6 +18,13 @@ if(!empty($_GET['action_detail'])){
 if(!empty($_GET['action_login'])){
 	include('./php/traitement_id.php'); 
 }
+if(!empty($_GET['action_getinscription'])){
+	$_errorInscription =false;
+	$_currentPage = 'inscription'; 
+}
+if(!empty($_GET['action_inscription'])){
+	include('./php/inscription.php'); 
+}
 //////////////////////////////////////////////
 
 ?>
