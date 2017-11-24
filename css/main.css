@@ -3,7 +3,7 @@ body{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
 	padding-top:6%;
-	padding-bottom: 10%;
+	padding-bottom: 12%;
 }
 
 button, .bouton, .connexion{
@@ -231,7 +231,8 @@ table
 }
 
 #carrousel img{
-    width:100%;
+	width:100%;
+     
 }
 /* fin carrousel*/
 
