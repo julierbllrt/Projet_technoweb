@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 02 nov. 2017 à 15:23
+-- Généré le :  ven. 24 nov. 2017 à 14:00
 -- Version du serveur :  5.7.10-log
 -- Version de PHP :  5.6.31
 
@@ -21,6 +21,22 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `magasinmontre`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `commande`
+--
+
+DROP TABLE IF EXISTS `commande`;
+CREATE TABLE IF NOT EXISTS `commande` (
+  `id` int(11) NOT NULL,
+  `id commande` int(11) NOT NULL,
+  `statut_ready` tinyint(1) NOT NULL,
+  `prixtotal` int(11) NOT NULL,
+  PRIMARY KEY (`id commande`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -46,6 +62,22 @@ INSERT INTO `identification` (`id`, `pseudo`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `ligne`
+--
+
+DROP TABLE IF EXISTS `ligne`;
+CREATE TABLE IF NOT EXISTS `ligne` (
+  `id commande` int(11) NOT NULL,
+  `ProduitID` int(11) NOT NULL,
+  `quantite` int(11) NOT NULL,
+  `prix` int(11) NOT NULL,
+  PRIMARY KEY (`ProduitID`),
+  KEY `id commande` (`id commande`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `stock`
 --
 
@@ -57,18 +89,35 @@ CREATE TABLE IF NOT EXISTS `stock` (
   `Prix` int(255) NOT NULL,
   `Image` text NOT NULL,
   `ProduitNom` varchar(100) NOT NULL,
+  `Description` text NOT NULL,
   PRIMARY KEY (`ProduitID`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `stock`
 --
 
-INSERT INTO `stock` (`Produit`, `ProduitID`, `Marque`, `Prix`, `Image`, `ProduitNom`) VALUES
-('Montre', 1, 'Rolex', 1500, 'montre1.jpg', 'Montre_RO_UD44'),
-('Montre', 2, 'Rolex', 800, 'montre2.jpg', 'Montre_RO-UF12'),
-('Montre', 3, 'Omega', 399, 'montre3.jpg', 'Montre_OM_85'),
-('Montre', 4, 'IWC', 149, 'montre4.jpg', 'Montre_IW_FG58');
+INSERT INTO `stock` (`Produit`, `ProduitID`, `Marque`, `Prix`, `Image`, `ProduitNom`, `Description`) VALUES
+('Montre', 1, 'Rolex', 1500, 'montre1.jpg', 'Montre_RO_UD44', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\n				are aliquam dui a mollis. Sed ut feugiat diam. Nam eu ipsum auctor, pos\r\n				uere augue finibus, tempor enim. Donec condimentum dignissim sapie\r\n				n sed viverra.'),
+('Montre', 2, 'Rolex', 800, 'montre2.jpg', 'Montre_RO-UF12', ''),
+('Montre', 3, 'Omega', 399, 'montre3.jpg', 'Montre_OM_85', ''),
+('Montre', 4, 'IWC', 149, 'montre4.jpg', 'Montre_IW_FG58', '');
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `commande`
+--
+ALTER TABLE `commande`
+  ADD CONSTRAINT `commande_ibfk_1` FOREIGN KEY (`id`) REFERENCES `identification` (`id`);
+
+--
+-- Contraintes pour la table `ligne`
+--
+ALTER TABLE `ligne`
+  ADD CONSTRAINT `ligne_ibfk_1` FOREIGN KEY (`id commande`) REFERENCES `commande` (`id commande`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
