@@ -1,4 +1,4 @@
 <footer>
-	<a href="#"  class="basPage" >Contact</a>
+	<a href="http://www.isen.fr/"  class="basPage" >Contact</a>
 </footer>
 

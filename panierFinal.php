@@ -1,5 +1,5 @@
 <!-- ligne a ajouter a chaque produit
-<a href="panierFinal.php?action=ajout&amp;l=Libelle&amp;q=Quantite&amp;p=Prix" onclick="window.open(this.href, '', 'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=600, height=350'); return false;">Ajouter au panier</a>
+
 -->
 <?php
 // Victorien Renault et Maxime Ramanah 
@@ -51,7 +51,7 @@ if (!$erreur){
       Case "refresh" :
          for ($i = 0 ; $i < count($QteArticle) ; $i++)
          {
-            modifierQTeArticle($_SESSION['panier']['libelleProduit'][$i],round($QteArticle[$i]));
+            modifierQTeArticle($_SESSION['magasinmontre']['ProduitID'][$i],round($QteArticle[$i]));
          }
          break;
 
@@ -81,9 +81,9 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 		<td colspan="4">Votre panier</td>
 	</tr>
 	<tr>
-		<td>Libellé</td>
+		<td>ProduitID</td>
 		<td>Quantité</td>
-		<td>Prix Unitaire</td>
+		<td>Prix</td>
 		<td>Action</td>
 	</tr>
 
@@ -91,7 +91,11 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 	<?php
 	if (creationPanier())
 	{
-	   $nbArticles=count($_SESSION['panier']['libelleProduit']);
+	//ajout base de données magasinmontre
+	   $bdd = new PDO('mysql:host=localhost;dbname=magasinmontre;charset=utf8', 'root', '');
+	   $reponse = $bdd->query('SELECT * FROM magasinmontre.stock');
+	  
+	  $nbArticles=count($_SESSION['magasinmontre']['ProduitID']);
 	   if ($nbArticles <= 0)
 	   echo "<tr><td>Votre panier est vide </ td></tr>";
 	   else
@@ -99,10 +103,10 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 	      for ($i=0 ;$i < $nbArticles ; $i++)
 	      {
 	         echo "<tr>";
-	         echo "<td>".htmlspecialchars($_SESSION['panier']['libelleProduit'][$i])."</ td>";
-	         echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\"/></td>";
-	         echo "<td>".htmlspecialchars($_SESSION['panier']['prixProduit'][$i])."</td>";
-	         echo "<td><a href=\"".htmlspecialchars("panier.php?action=suppression&l=".rawurlencode($_SESSION['panier']['libelleProduit'][$i]))."\">Supprimer</a></td>";
+	         echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['ProduitID'][$i])."</ td>";
+	         echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['magasinmontre']['quantite'][$i])."\"/></td>";
+	         echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['prix'][$i])."</td>";
+	         echo "<td><a href=\"".htmlspecialchars("panierFinal.php?action=suppression&l=".rawurlencode($_SESSION['magasinmontre']['ProduitID'][$i]))."\">Supprimer</a></td>";
 	         echo "</tr>";
 	      }
 

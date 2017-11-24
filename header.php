@@ -2,8 +2,6 @@
 <header id="header">
 	<div class="element_header">
 		<a href="produit.php" class="redirect1 bouton"> Produit</a>
-		<a href="#" class="redirect2 bouton"> Lien 2</a>			<!-- lien des pages à compléter-->
-		<a href="#" class="redirect3 bouton"> Lien 3</a>
 		<?php ?>
 	</div>
 	<div class="element_header">
@@ -23,11 +21,11 @@
 		?>
 		<div class="dropdown">
 			<div id="cart" >
-				<p class="bouton" ><span id="in-cart-items-num" >0</span> Article(s)</p>
+				<p class="bouton" ><span id="in-cart-items-num" ></span>Panier</p>
 			</div>
 			<ul id="cart-dropdown" hidden>
 					<li id="empty-cart-msg"><a>Panier vide</a></li>
-					<li class="go-to-cart hidden"><a href="panier.php">Voir le panier</a></li>    <!-- lien vers le panier -->
+					<!--<li class="go-to-cart hidden"><a href="panierFinal.php">Voir le panier</a></li>    <!-- lien vers le panier -->
 			</ul>
 			
 		</div>
