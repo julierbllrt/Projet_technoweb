@@ -3,7 +3,12 @@
 
 
 <html>
-	<?php session_start(); ?>
+	<?php session_start();
+	if (isset$_SESSION['errorInscription']){
+	}
+	else{
+		$_SESSION['errorInscription'] = false;
+	}	?>
 	<head>
 		<title>Inscription</title>
 		<?php include('head.php'); ?>

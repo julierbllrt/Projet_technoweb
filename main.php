@@ -14,9 +14,11 @@ if(!empty($_GET['action_result'])){
 if(!empty($_GET['action_detail'])){
 	$_currentAction = $_GET['action_detail'] ;
 	$_currentPage = 'produit' ;
-	
 }
-//////////////////////////////////////////////
+if(!empty($_GET['action_login'])){
+	include('./php/traitement_id.php'); 
+}
+/////////////////////////////////////////////:
 
 ?>
 <html >
@@ -24,12 +26,11 @@ if(!empty($_GET['action_detail'])){
 	<head>
 		<?php include('head.php'); ?>
 		<style>
-				<?php include('css/main.css');?>
+				<?php include('css/main.css');
+				include('carrousel.php');
+				include('section.php');
+				?>
 		</style>
-		
-		<?phpinclude('carrousel.php');
-				include('section.php'); ?>
-		
 	</head>
 	<body>
 		
@@ -44,9 +45,5 @@ if(!empty($_GET['action_detail'])){
 		
 		<?php include('footer.php'); ?>
 	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="js/index.js"/></script>
-	<script src="js/panier.js"/></script>
-	
 
 </html>
