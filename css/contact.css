@@ -1,43 +1,46 @@
 body{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
-	font-size:1.2em;
-	padding-top:6%;
-	padding-bottom: 10%;
-	text-align:center;
+	font-size:1.0em;
+
 	
-	background-color:red;
 	
 }
-
 form{
 	display:block;
 	flex-direction: column;
 	justify-content: center;		 
 	align-items: center;
-	width: 500px;
-	height: 600px;
-	background: Gainsboro ; 
+	width: 60%;
+	height: 80%;
+	background: white ; 
 	margin:auto;
 	border: 2px solid LightGrey;
 	text-align: center;
+	margin-top:3%;
+	
 }
 
-#barre_connexion{	
-	background-color: red;
 
-	min-height: calc(100vh - 140px);
-	max-height: calc(100vh - 150px);
-	flex:1;
-	align-self: center;
-	
-	width:100%;
-	
-	
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	
-	
-	
+
+#barre_connexion{	
+	text-align: left;
+	margin-left: 40%;
+}
+
+#barre_recherche{
+	text-align: left;
+	margin-left: 40%;
+
+}
+
+#panier{	
+	text-align: left;
+	margin-left: 40%;
+
+}
+
+#gestion{	
+	text-align: left;
+	margin-left: 40%;
+
 }
