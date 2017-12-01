@@ -22,7 +22,7 @@
 		'pseudo' => $pseudo,
 		'psw' => $psw));
 		$_errorInscription=False;
-		$_currentPage = merci;
+		$_currentPage = 'merci';
 	}
 	else{
 		$_errorInscription=True;
