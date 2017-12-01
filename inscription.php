@@ -1,5 +1,8 @@
-<style><?php include('css/inscription.css'); ?></style>
-<form  id="forminscription" method="POST" action="main.php?action_inscription=inscription">
+<style>
+	<?php include('css/inscription.css'); ?>
+</style>
+
+<form  id="forminscription" method="POST" action="index.php?action_inscription=inscription">
 	<p class="id">Inscription</p>
 	<table>
 		<tbody>

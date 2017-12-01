@@ -1,12 +1,15 @@
 
 <header id="header">
+
 	<div class="element_header">
 		<a href="produit.php" class="redirect1 bouton"> Produit</a>
 		<?php ?>
 	</div>
+	
 	<div class="element_header">
-		<a href="main.php"><img class="logo" src="img/Logo.png"/></a>
+		<a href="index.php"><img class="logo" src="img/Logo.png"/></a>
 	</div>
+	
 	<div class="element_header">
 		<button   class ="bouton" onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
 		<?php
@@ -17,7 +20,7 @@
 			}
 			else{
 				echo '<button class ="bouton"   onclick=showConnexion() class="connexion">Connexion </button>';
-				echo '<form  id="bouton_recherche" method="POST" action="main.php?action_getinscription=getinscription"><input type="submit" value="S\'inscrire"/></form>';
+				echo '<form  id="bouton_recherche" method="POST" action="index.php?action_getinscription=getinscription"><input type="submit" value="S\'inscrire"/></form>';
 			}
 		?>
 		<div class="dropdown">
@@ -31,5 +34,6 @@
 			
 		</div>
 	</div>
+	
 </header>
 

@@ -1,12 +1,12 @@
 
-	<form id="searchfield" method="post" action="main.php?action_result=result">
+	<form id="searchfield" method="post" action="index.php?action_result=result">
 
 		<input id="barrederecherche" name="recherche"  role="textbox"   type="text" ></input>
 		<input  id="bouton_recherche" type="submit" value="Recherche" />
 
 	</form>
 
-	<form  id="form" method="POST" action="main.php?action_login=login">
+	<form  id="form" method="POST" action="index.php?action_login=login">
 		<input type="hidden" name="action" value="/php/traitement_id" ?>
 		<img class="picture" src='https://image.ibb.co/hSPLZQ/Login_picture.png' />
 		<p class="id">Veuillez vous identifier</p>

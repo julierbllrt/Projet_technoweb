@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 
-			  
 <html>
 	<head>
 		<title>Merci</title>
@@ -26,7 +24,7 @@
 							<td colspan="2"><p> Merci pour votre inscription veuillez vous connecter.</p></td>
 						</thead>
 						<tr>
-							<td><a href="./main.php" class="button">Retour</a></td>
+							<td><a href="./index.php" class="button">Retour</a></td>
 						</tr>
 					</tbody>
 				</table>
