@@ -11,7 +11,7 @@ form{
 	justify-content: center;		 
 	align-items: center;
 	width: 60%;
-	height: 80%;
+	height: 95%;
 	background: white ; 
 	margin:auto;
 	border: 2px solid LightGrey;
@@ -31,6 +31,10 @@ form{
 	text-align: left;
 	margin-left: 40%;
 
+}
+#page_prod{
+	text-align: left;
+	margin-left: 40%;
 }
 
 #panier{	
