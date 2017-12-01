@@ -1,7 +1,7 @@
 
 	<form id="searchfield" method="post" action="index.php?action_result=result">
 
-		<input id="barrederecherche" name="recherche"  role="textbox"   type="text" ></input>
+		<input id="barrederecherche" name="recherche"  role="textbox"   type="montre" ></input>
 		<input  id="bouton_recherche" type="submit" value="Recherche" />
 
 	</form>

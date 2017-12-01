@@ -2,7 +2,9 @@
 <header id="header">
 
 	<div class="element_header">
-		<a href="produit.php" class="redirect1 bouton"> Produit</a>
+		<form   id="boutonproduit" method="post"  action="main.php?action_produit=detail&montreId" > 
+			<input  id="bouton_produit" type="submit" value="produit" />
+		</form>
 		<?php ?>
 	</div>
 	
