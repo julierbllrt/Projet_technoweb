@@ -15,11 +15,13 @@
 
 		//récuperation des variables en POST ou GET
 		$l = (isset($_POST['l'])? $_POST['l']:  (isset($_GET['l'])? $_GET['l']:null )) ;
+		$m = (isset($_POST['m'])? $_POST['m']:  (isset($_GET['m'])? $_GET['m']:null )) ;
 		$p = (isset($_POST['p'])? $_POST['p']:  (isset($_GET['p'])? $_GET['p']:null )) ;
 		$q = (isset($_POST['q'])? $_POST['q']:  (isset($_GET['q'])? $_GET['q']:null )) ;
 
 		//Suppression des espaces verticaux
 		$l = preg_replace('#\v#', '',$l);
+		$m = preg_replace('#\v#', '',$m);
    
 		//On verifie que $p soit un float
 		$p = floatval($p);
@@ -41,7 +43,7 @@
 	if (!$erreur){
 		switch($action){
 			Case "ajout":
-				ajouterArticle($l,$q,$p);
+				ajouterArticle($l,$m,$q,$p);
 				break;
 
 			Case "suppression":
@@ -77,10 +79,11 @@ echo '<? encoding="utf-8"?>';?>
 		<form method="post" action="panierFinal.php">
 			<table style="width: 400px">
 				<tr>
-					<td colspan="4">Votre panier</td>
+					<td colspan="5">Votre panier</td>
 				</tr>
 				<tr>
 					<td>ProduitID</td>
+					<td>Marque</td>
 					<td>Quantité</td>
 					<td>Prix</td>
 					<td>Action</td>
@@ -100,17 +103,18 @@ echo '<? encoding="utf-8"?>';?>
 						       for ($i=0 ;$i < $nbArticles ; $i++){
 								echo "<tr>";
 								echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['ProduitID'][$i])."</ td>";
+								echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['Marque'][$i])."</ td>";
 								echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['magasinmontre']['quantite'][$i])."\"/></td>";
 								echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['prix'][$i])."</td>";
 								echo "<td><a href=\"".htmlspecialchars("panierFinal.php?action=suppression&l=".rawurlencode($_SESSION['magasinmontre']['ProduitID'][$i]))."\">Supprimer</a></td>";
 								echo "</tr>";
 						      }
 						      echo "<tr><td colspan=\"2\"> </td>";
-						      echo "<td colspan=\"2\">";
+						      echo "<td colspan=\"3\">";
 						      echo "Total : ".MontantGlobal();
 						      echo "</td></tr>";
 
-						      echo "<tr><td colspan=\"4\">";
+						      echo "<tr><td colspan=\"5\">";
 						      echo "<input type=\"submit\" value=\"Rafraichir\"/>";
 						      echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
 
