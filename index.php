@@ -13,6 +13,10 @@ if(!empty($_GET['action_detail'])){
 	$_currentAction = $_GET['action_detail'] ;
 	$_currentPage = 'produit' ;
 }
+if(!empty($_GET['action_produit'])){
+	$_currentAction = $_GET['action_produit'] ;
+	$_currentPage = 'resultatbouton' ;
+}
 if(!empty($_GET['action_login'])){
 	include('./php/traitement_id.php'); 
 }
