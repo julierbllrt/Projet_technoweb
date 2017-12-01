@@ -3,7 +3,7 @@
 
 	<div class="element_header">
 		<form   id="boutonproduit" method="post"  action="index.php?action_produit=detail&montreId" > 
-			<input  id="bouton_produit" type="submit" value="produit" value="montre"/>
+			<input  id="bouton_produit" type="submit" value="produit" />
 		</form>
 		<?php ?>
 	</div>
