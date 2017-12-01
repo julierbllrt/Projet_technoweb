@@ -17,7 +17,7 @@
 			}
 			else{
 				echo '<button class ="bouton"   onclick=showConnexion() class="connexion">Connexion </button>';
-				//echo '<button class ="bouton"   onclick=showConnexion() class="connexion">S\'inscrire </button>';
+				echo '<form  id="bouton_recherche" method="POST" action="main.php?action_getinscription=getinscription"><input type="submit" value="S\'inscrire"/></form>';
 			}
 		?>
 		<div class="dropdown">

@@ -8,8 +8,6 @@ $_currentPage = 'carrousel';
 if(!empty($_GET['action_result'])){
 	$_currentAction = $_GET['action_result'] ;
 	$_currentPage = 'result' ;
-	
-	/////La page sera result
 }
 if(!empty($_GET['action_detail'])){
 	$_currentAction = $_GET['action_detail'] ;
@@ -24,6 +22,9 @@ if(!empty($_GET['action_getinscription'])){
 }
 if(!empty($_GET['action_inscription'])){
 	include('./php/inscription.php'); 
+}
+if(!empty($_GET['action_contact'])){
+	$_currentPage = 'contact'; 
 }
 //////////////////////////////////////////////
 

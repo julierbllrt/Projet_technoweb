@@ -1,4 +1,5 @@
 <footer>
-	<a href="contact.html"  class="basPage" >Contact</a>
+	<form  id="forminscription" method="POST" action="main.php?action_contact=contact">
+		<input class="button" type="submit" value="Contact"/> 
+	</form>
 </footer>
-
