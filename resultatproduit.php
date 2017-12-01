@@ -20,7 +20,7 @@
 			
 				while($donnees = $reponse->fetch()){;
 			?>
-		<a  class="lien_produit" href="main.php?action_detail=detail&montreId=<?php echo $donnees['ProduitID'];?>">
+		<a  class="lien_produit" href="index.php?action_detail=detail&montreId=<?php echo $donnees['ProduitID'];?>">
 			<button>
 				<div id='test'> 
 					<p>Nom du produit : <?php echo $donnees['ProduitNom'];?></p>

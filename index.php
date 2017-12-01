@@ -15,7 +15,7 @@ if(!empty($_GET['action_detail'])){
 }
 if(!empty($_GET['action_produit'])){
 	$_currentAction = $_GET['action_produit'] ;
-	$_currentPage = 'resultatbouton' ;
+	$_currentPage = 'resultatproduit' ;
 }
 if(!empty($_GET['action_login'])){
 	include('./php/traitement_id.php'); 
