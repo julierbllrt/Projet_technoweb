@@ -1,26 +1,32 @@
  function showRecherche() {
+	var w = document.getElementById("forminscription");
 	var x = document.getElementById("searchfield");
 	var y = document.getElementById("form");
-	var z = document.getElementById("carrousel");
+	var z = document.getElementById("current_page");
 	if (x.style.display === "none") {
+		//w.style.display = "none";
 		x.style.display = "flex";
 		y.style.display = "none";
 		z.style.display = "none";
 	} else {
+		//w.style.display = "none";
 		x.style.display = "none";
 		z.style.display = "flex";
 	}
 }
 
 function showConnexion() {
+	var w=document.getElementById("forminscription");
 	var x = document.getElementById("searchfield");
 	var y = document.getElementById("form");
-	var z = document.getElementById("carrousel");
+	var z = document.getElementById("current_page");
        if (y.style.display === "none") {
+		//w.style.display = "none";
 		y.style.display = "block";
 		x.style.display = "none";
 		z.style.display = "none";
 	} else {
+		//w.style.display = "none";
 		y.style.display = "none";
 		z.style.display = "flex";
 	}
