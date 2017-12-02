@@ -13,7 +13,11 @@
 	</div>
 	
 	<div class="element_header">
-		<button   id="loupe" onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
+		
+	<form id="form_search" method="post" action="index.php?action_search=search">
+	<input class="connexion" type="submit" value="Recherche"/></form>
+
+	</form>
 		<?php
 			
 			if (isset($_SESSION['pseudo'])) {
@@ -21,7 +25,10 @@
 				echo '<a href="./php/logout.php">Déconnexion</a>';
 			}
 			else{
-				echo '<button class ="connexion"   onclick=showConnexion() class="connexion">Connexion </button>';
+				echo '<form  id="form_connexion" method="POST" action="index.php?action_getconnexion=getconnexion">
+				<input class="connexion" type="submit" value="Connexion"/></form>';
+				
+				
 				echo '<form  id="form_inscription" method="POST" action="index.php?action_getinscription=getinscription">
 				<input class="connexion" type="submit" value="S\'inscrire"/></form>';
 			}

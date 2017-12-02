@@ -30,6 +30,14 @@ if(!empty($_GET['action_inscription'])){
 if(!empty($_GET['action_contact'])){
 	$_currentPage = 'contact'; 
 }
+if(!empty($_GET['action_search'])){
+	$_currentPage = 'search'; 
+}
+if(!empty($_GET['action_getconnexion'])){
+	$_currentPage = 'connexion'; 
+}
+
+
 //////////////////////////////////////////////
 
 ?>
@@ -50,11 +58,7 @@ if(!empty($_GET['action_contact'])){
 		<?php include('header.php'); ?>
 		
 		<section id = "page">
-			<?php include('section.php'); ?>
-			<section id="current_page">
 			<?php include($_currentPage .'.php'); ?>
-			</section>
-			
 		</section>
 		
 		<?php include('footer.php'); ?>

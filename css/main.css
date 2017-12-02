@@ -78,6 +78,7 @@ body{
 	width:40px;
 }
 
+
 #loupe{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
@@ -91,7 +92,7 @@ body{
 	
 }
 
-#form_inscription,#boutonproduit, #contact{
+#form_inscription,#boutonproduit, #contact, #form_search,#form_connexion{
 	border:none;
 	background-color:White;
 	margin:0;
@@ -128,7 +129,6 @@ ul, li{  /*panier liste*/
 
 
 /*PAGE*/
-
 #page{	
 	#background-color: LightGrey;
 
@@ -141,7 +141,6 @@ ul, li{  /*panier liste*/
 	
 	
 	display: flex;
-	flex-direction:column;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
@@ -149,26 +148,6 @@ ul, li{  /*panier liste*/
 	
 	
 }
-#current_page{	
-	#background-color: LightGrey;
-
-	min-height: calc(100vh - 140px);
-	max-height: calc(100vh - 150px);
-	flex:1;
-	align-self: center;
-	
-	width:100%;
-	
-	
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	
-	
-	
-}
-
 /*Barre de recherche*/
 #searchfield{  /*pour main*/
 	
@@ -177,6 +156,7 @@ ul, li{  /*panier liste*/
 	justify-content:center;
 	align-items:center;
 }
+
 
 .searchfield{  /*pour fichier recherche*/
 	
@@ -306,7 +286,7 @@ table{
 	min-height: calc(100vh - 140px);
 	max-height: calc(100vh - 150px);
 	align-self: center;
-	width:100%;
+	width:75%;
 	
 	display: flex;
 	flex-direction:column;
@@ -378,10 +358,10 @@ footer
 	#align-items: center;
 	
 	background: White; 
-	
+	margin:auto;
 	#border: 2px solid LightGrey;
 	#text-align: center;
-	
+	margin-top:3%;
 	padding-bottom:3%;
 }
 #contact{
