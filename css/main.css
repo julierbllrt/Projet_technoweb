@@ -128,7 +128,28 @@ ul, li{  /*panier liste*/
 
 
 /*PAGE*/
+
 #page{	
+	#background-color: LightGrey;
+
+	min-height: calc(100vh - 140px);
+	max-height: calc(100vh - 150px);
+	flex:1;
+	align-self: center;
+	
+	width:100%;
+	
+	
+	display: flex;
+	flex-direction:column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+}
+#current_page{	
 	#background-color: LightGrey;
 
 	min-height: calc(100vh - 140px);
@@ -147,6 +168,7 @@ ul, li{  /*panier liste*/
 	
 	
 }
+
 /*Barre de recherche*/
 #searchfield{  /*pour main*/
 	
@@ -284,7 +306,7 @@ table{
 	min-height: calc(100vh - 140px);
 	max-height: calc(100vh - 150px);
 	align-self: center;
-	width:75%;
+	width:100%;
 	
 	display: flex;
 	flex-direction:column;
@@ -356,10 +378,10 @@ footer
 	#align-items: center;
 	
 	background: White; 
-	margin:auto;
+	
 	#border: 2px solid LightGrey;
 	#text-align: center;
-	margin-top:3%;
+	
 	padding-bottom:3%;
 }
 #contact{

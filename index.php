@@ -50,8 +50,11 @@ if(!empty($_GET['action_contact'])){
 		<?php include('header.php'); ?>
 		
 		<section id = "page">
-			<?php include($_currentPage .'.php'); 
-			include('section.php'); ?>
+			<?php include('section.php'); ?>
+			<section id="current_page">
+			<?php include($_currentPage .'.php'); ?>
+			</section>
+			
 		</section>
 		
 		<?php include('footer.php'); ?>
