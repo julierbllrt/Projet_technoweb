@@ -8,6 +8,7 @@
 		if (!isset($_SESSION['magasinmontre'])){
 			$_SESSION['magasinmontre']=array();
 			$_SESSION['magasinmontre']['ProduitID'] = array();
+			$_SESSION['magasinmontre']['Marque'] = array();
 		      $_SESSION['magasinmontre']['quantite'] = array();
 		      $_SESSION['magasinmontre']['prix'] = array();
 		      $_SESSION['magasinmontre']['id commande'] = false;
@@ -19,11 +20,12 @@
 /**
  * Ajoute un article dans le panier
  * @param string $ProduitID
+ * @param string $Marque
  * @param int $quantite
  * @param float $prix
  * @return void
  */
-	function ajouterArticle($ProduitID,$quantite,$prix){
+	function ajouterArticle($ProduitID,$Marque,$quantite,$prix){
 
 	//Si le panier existe
 	if (creationPanier() && !isVerrouille()){
@@ -37,6 +39,7 @@
 		else{
 			//Sinon on ajoute le produit
 			array_push( $_SESSION['magasinmontre']['ProduitID'],$ProduitID);
+			array_push( $_SESSION['magasinmontre']['Marque'],$Marque);
 			array_push( $_SESSION['magasinmontre']['quantite'],$quantite);
 			array_push( $_SESSION['magasinmontre']['prix'],$prix);
 		}
@@ -87,6 +90,7 @@
 			//Nous allons passer par un panier temporaire
 			$tmp=array();
 		      $tmp['ProduitID'] = array();
+		      $tmp['Marque'] = array();
 		      $tmp['quantite'] = array();
 		      $tmp['prix'] = array();
 		      $tmp['id commande'] = $_SESSION['magasinmontre']['id commande'];
@@ -94,6 +98,7 @@
 			for($i = 0; $i < count($_SESSION['magasinmontre']['ProduitID']); $i++){
 				if ($_SESSION['magasinmontre']['ProduitID'][$i] !== $ProduitID){
 					array_push( $tmp['ProduitID'],$_SESSION['magasinmontre']['ProduitID'][$i]);
+					array_push( $tmp['Marque'],$_SESSION['magasinmontre']['Marque'][$i]);
 					array_push( $tmp['quantite'],$_SESSION['magasinmontre']['quantite'][$i]);
 					array_push( $tmp['prix'],$_SESSION['magasinmontre']['prix'][$i]);
 				}
