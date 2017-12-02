@@ -3,7 +3,7 @@
 
 	<div class="element_header">
 		<form   id="boutonproduit" method="post"  action="index.php?action_produit=detail&montreId" > 
-			<input  id="bouton_produit" type="submit" value="produit" />
+			<input class="bouton"  id="bouton_produit" type="submit" value="Produit" />
 		</form>
 		<?php ?>
 	</div>
@@ -13,7 +13,7 @@
 	</div>
 	
 	<div class="element_header">
-		<button   class ="bouton" onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
+		<button   id="loupe" onclick=showRecherche()><img  id="search" src="img/search.png"> </button>
 		<?php
 			
 			if (isset($_SESSION['pseudo'])) {
@@ -21,13 +21,14 @@
 				echo '<a href="./php/logout.php">Déconnexion</a>';
 			}
 			else{
-				echo '<button class ="bouton"   onclick=showConnexion() class="connexion">Connexion </button>';
-				echo '<form  id="bouton_recherche" method="POST" action="index.php?action_getinscription=getinscription"><input type="submit" value="S\'inscrire"/></form>';
+				echo '<button class ="connexion"   onclick=showConnexion() class="connexion">Connexion </button>';
+				echo '<form  id="form_inscription" method="POST" action="index.php?action_getinscription=getinscription">
+				<input class="connexion" type="submit" value="S\'inscrire"/></form>';
 			}
 		?>
 		<div class="dropdown">
 			<div id="cart" >
-				<p class="bouton">Panier</p>
+				<p class="connexion">Panier</p>
 			</div>
 			<ul id="cart-dropdown" hidden>
 					<!--<li id="empty-cart-msg"><a>Panier vide</a></li>  -->

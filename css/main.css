@@ -2,8 +2,9 @@
 body{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
-	padding-top:6%;
-	padding-bottom: 12%;
+	display:flex;
+	padding-top:100px;
+	padding-bottom: 60px;
 }
 
 .bouton, .connexion{
@@ -34,7 +35,6 @@ body{
 	position:fixed;
 	background-color:White;
 	width:100%;
-	height: 15%;
 
 	border-bottom: 2px solid LightGrey;       
 	box-shadow: 0px 2px 5px  LightGrey;
@@ -44,14 +44,9 @@ body{
 	
 	display:flex;
 	align-items: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	
-}
-
-.logo{ 
-	margin: auto;				 
-	height:60px;	
 }
 
 .element_header:nth-child(1){
@@ -72,8 +67,51 @@ body{
 	
 }
 
+.logo{ 
+	margin: auto;				 
+	height:60px;	
+}
+
+
+
 #search{ /*loupe*/
 	width:40px;
+}
+
+#loupe{
+	font-family: 'Quicksand', 'OpenSans',sans-serif;
+	font-size:1.2em;
+	background-color: White;
+	border:none;
+	padding:6px;
+	
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+
+#form_inscription,#boutonproduit, #contact{
+	border:none;
+	background-color:White;
+	margin:0;
+}
+
+
+a, a:visited{	/*lien bouton*/					 
+	text-decoration:none;		 
+	color: black;					 
+}
+
+
+/*PANIER*/
+
+.dropdown:hover > #cart-dropdown{
+       display: block;
+	
+}
+#cart .connexion{
+	margin:0;
 }
 
 ul, li{  /*panier liste*/
@@ -83,12 +121,7 @@ ul, li{  /*panier liste*/
 	width:100%;
 }
 
-
-
-a, a:visited{	/*lien bouton*/					 
-	text-decoration:none;		 
-	color: black;					 
-}
+/* FIN PANIER*/
 
 /*FIN HEADER*/
 
@@ -142,18 +175,6 @@ a, a:visited{	/*lien bouton*/
 	text-decoration: none;
 }
 
-#result{
-	display:none;
-}
-
-form{
-	width:100%;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	
-}
-
 #barrederecherche{
 	width:50%;
 	height:5%;
@@ -163,8 +184,6 @@ form{
 /*fin barre de recherche*/
 
 /*formulaire connexion*/
-
-
 #form{
 	display:none;
 	flex-direction: column;
@@ -188,14 +207,12 @@ form{
 
 table
 {
-	font-family: 'Quicksand', sans-serif;
 	margin: auto;
 	margin-top: 10px;
 }
 
 .buttonok
 {
-	font-family: 'Quicksand', sans-serif;
 	padding: 4px;
 	background: WhiteSmoke;
 	border: 2px solid LightGrey;
@@ -209,6 +226,34 @@ table
 	background: White;
 }
 /*fin formulaire connexion*/
+
+
+/*formulaire inscription*/
+
+.button:hover
+{
+	background: White;
+}
+
+#forminscription{	
+	background: Gainsboro ; 
+	border: 2px solid LightGrey;
+}
+
+table{
+	text-align: left;
+}
+
+.centre{
+	text-align: center;
+	justify-content: center;		 
+	align-items: center;
+}
+
+#error{
+	color: red;
+}
+/*fin formulaire inscription*/
 
 /*carrousel*/
 .control{
@@ -238,13 +283,11 @@ table
 .result{
 	min-height: calc(100vh - 140px);
 	max-height: calc(100vh - 150px);
-	flex:1;
 	align-self: center;
 	width:75%;
 	
 	display: flex;
 	flex-direction:column;
-	
 	align-items: center;
 }
 
@@ -256,17 +299,24 @@ table
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
 	background-color: White;
-	#border:none;
-	border-bottom: 2px solid Light Grey;
+	border: 2px solid LightGrey;
 	padding:6px;
 	
 	text-align:center;
 	padding-left:15px;
 	padding-right:15px;
-	
 }
-
 /*fin result*/
+
+/*produit description*/
+
+#des{
+	padding:20px;
+	border:1px solid LightGrey;
+}
+/* fin produit*/
+
+/*FIN PAGE*/
 
 
 /*FOOTER*/
@@ -293,10 +343,41 @@ footer
 }
 /*FIN FOOTER*/
 
-
-/*PANIER*/
-.dropdown:hover > #cart-dropdown{
-       display: block;
+/* CONTACT*/
+#block{
+	width:300px;
+	flex:1;
+	#align-self: center;	
+	
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction:column;
+	#justify-content: center;		 
+	#align-items: center;
+	
+	background: White; 
+	margin:auto;
+	#border: 2px solid LightGrey;
+	#text-align: center;
+	margin-top:3%;
+	padding-bottom:3%;
 }
+#contact{
+	font-family: 'Quicksand', 'OpenSans',sans-serif;
+	font-size:1.2em;
+	background-color: White;
+	border:none;
+	padding:6px;
+	
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+
+/* FIN CONTACT*/
+
+
+
 
 

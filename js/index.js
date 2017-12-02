@@ -1,4 +1,4 @@
-function showRecherche() {
+ function showRecherche() {
 	var x = document.getElementById("searchfield");
 	var y = document.getElementById("form");
 	var z = document.getElementById("carrousel");

@@ -1,8 +1,4 @@
 
-	<style>
-		<?php include('css/error.css'); ?>
-	</style>
-
 	<form method="POST" action="index.php?action_getinscription=getinscription">
 		<table>
 			<tbody>

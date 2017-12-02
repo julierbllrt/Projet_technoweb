@@ -23,8 +23,8 @@
 		<a  class="lien_produit" href="index.php?action_detail=detail&montreId=<?php echo $donnees['ProduitID'];?>">
 			<button>
 				<div id='test'> 
-					<p>Nom du produit : <?php echo $donnees['ProduitNom'];?></p>
-					<p>La marque du produit :  <?php echo $donnees['Marque']; ?>  prix:  <?php echo $donnees['Prix'] ; ?> € </p>
+					<p>Produit : <?php echo $donnees['ProduitNom'];?></p>
+					<p>Marque :  <?php echo $donnees['Marque']; ?></p><p> Prix:  <?php echo $donnees['Prix'] ; ?> € </p>
 					<img id='photo' src= "img/<?php  echo $donnees['Image']; ?> " />
 					
 				</div>

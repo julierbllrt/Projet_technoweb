@@ -46,10 +46,8 @@ if(!empty($_GET['action_contact'])){
 		
 	</head>
 	<body>
-		
 	
 		<?php include('header.php'); ?>
-		
 		
 		<section id = "page">
 			<?php include($_currentPage .'.php'); 
@@ -58,6 +56,7 @@ if(!empty($_GET['action_contact'])){
 		
 		<?php include('footer.php'); ?>
 	</body>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/index.js"/></script>
 	<script src="js/panier.js"/></script>

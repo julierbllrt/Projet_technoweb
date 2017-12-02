@@ -1,35 +1,33 @@
-<style><?php include('css/contact.css'); ?></style>
-<form>
+
+<form id="block">
 	<h1> Les personnes qui ont travaille  sur ce projet sont : </h1>
-	<h3 id="block">
-		<h2> A la barre de connexion et a l'inscription </h2>
-			<div id="barre_connexion">
+
+		<li> A la barre de connexion et a l'inscription 
+			
 				<p> - Florian Matte</p>
 				<p> - Julien Mercier</p>
-			</div>
+		</li>	
 			
-		<h2> A la barre de recherche </h2>
-			<div id="barre_recherche">
+		<li> A la barre de recherche </li>
 				<p> - Robin Poiret</p>
 				<p> - Benoit Pepin </p>
-			</div>
 			
-		<h2> A la page produit </h2>
-			<div id="page_prod">
+			
+		<li> A la page produit </li>
+			
 				<p> -Louis Pauty</p>
 				<p> -Antoine Pereira </p>
-			</div>
 			
-		<h2> Au panier / header /footer </h2>
-			<div id="panier">
+			
+		<li> Au panier / header /footer </li>
+		
 			<p> - Maxime Ramanah</p>
 			<p> - Victorien Renault </p>
-			</div>
 			
-		<h2> A la gestion du groupe, au debug et au design de notre magnifique site </h2>
-			<div id="gestion">
+			
+		<li> A la gestion du groupe, au debug et au design de notre magnifique site </li>
+			
 			<p> - Julie Robillart <p>
-			</div>
-	</h3>
+
 </form>
 

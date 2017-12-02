@@ -1,5 +1,5 @@
 <footer>
-	<form  id="forminscription" method="POST" action="index.php?action_contact=contact">
-		<input class="button" type="submit" value="Contact"/> 
+	<form  id="form_contact" method="POST" action="index.php?action_contact=contact">
+		<input id="contact" type="submit" value="Contact"/> 
 	</form>
 </footer>

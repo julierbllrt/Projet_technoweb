@@ -1,6 +1,4 @@
-<!-- ligne a ajouter a chaque produit
 
--->
 <?php
 	// Victorien Renault et Maxime Ramanah 
 	session_start();

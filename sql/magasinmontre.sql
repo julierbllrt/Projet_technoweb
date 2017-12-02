@@ -98,11 +98,12 @@ CREATE TABLE IF NOT EXISTS `stock` (
 --
 
 INSERT INTO `stock` (`Produit`, `ProduitID`, `Marque`, `Prix`, `Image`, `ProduitNom`, `Description`) VALUES
-('Montre', 1, 'Rolex', 1500, 'montre1.jpg', 'Montre_RO_UD44', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\nare aliquam dui a mollis. Sed ut feugiat diam. Nam eu ipsum auctor, pos\r\n'),
-('Montre', 2, 'Rolex', 800, 'montre2.jpg', 'Montre_RO-UF12', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\n'),
-('Montre', 3, 'Omega', 399, 'montre3.jpg', 'Montre_OM_85',  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\n'),
-('Montre', 4, 'IWC', 149, 'montre4.jpg', 'Montre_IW_FG58',  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orn\r\n');
-
+('Montre', 1, 'Omega', 78300, 'montre1.jpg', 'Chronographe à gousset \nolympique Omega 1932 \nà rattrapante', 'Boîtier: Or jaune Diamètre du boîtier: 70 mm Couleur du cadran: Blanc Verre: Verre saphir résistant aux rayures et antireflet'),
+('Montre', 2, 'Cartier',11100, 'montre2.jpg', 'Montre Tortue Cartier', "Montre Tortue petit modèle, mouvement mécanique Manufacture à remontage manuel, calibre 8970 MC. Boîte en or rose 18 carats, couronne octogonale ornée d'un saphir facetté, cadran guilloché argenté avec effet soleil, aiguilles en forme de glaive en acier bleui, bracelet en alligator marron, boucle ardillon en or rose 18 carats"),
+('Montre', 3, 'Diesel', 279, 'montre3.jpg', 'Mega Chief Diesel',  'Boîtier et bracelet en acier inoxydable avec plaquage noir, cadran doré, chrono, 51 mm'),
+('Montre', 4, 'Hugo Boss', 249, 'montre4.jpg', 'Horizon',  'Montre BOSS HORIZON Homme avec Boitier Rond 40 mm et Bracelet Cuir Noir'),
+('Montre', 5, 'Rolex', 89000, 'montre5.jpg', 'Rolex Daytona',  "CADRAN : Rare cadran pavé de diamants avec index saphir bleu. BOÎTIER : Or blanc 18k avec boucle déployante en or blanc. Lunette avec diamants d'origine.  BRACELET : Cuir gris bleuté avec son fermoir d'origine flip lock en or blanc."),
+('Montre', 6, 'Rolex', 62000, 'montre6.jpg', 'Rolex Pré Daytona',  "CADRAN : Blanc impeccable. Index en forme de flèche avec aiguilles dauphines. BOÎTIER : Acier en excellent état, peu poli avec lunette lisse. BRACELET : Oyster riveté.");
 --
 -- Contraintes pour les tables déchargées
 --

@@ -1,11 +1,10 @@
-<style>
-	<?php include('css/inscription.css'); ?>
-</style>
 
 <form  id="forminscription" method="POST" action="index.php?action_inscription=inscription">
-	<p class="id">Inscription</p>
 	<table>
 		<tbody>
+			<tr>
+				<td class="centre">Inscription</td>
+			</tr>
 			<tr>
 				<td>Choisissez votre Pseudo : </td>
 			</tr>
@@ -35,10 +34,12 @@
 			<tr>
 				<td><input type="password" name="confirmation" size="40"/></td>
 			</tr>
+			<tr>
+				<td><input class="centre" class="bouton" type="submit"/> </td>	
+			</tr>
+			
 		</tbody>
-	</table>
-	<p></p>
-	<input class="button" type="submit"/> 				
+	</table>	
 </form>
 
 	
