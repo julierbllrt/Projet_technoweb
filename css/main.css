@@ -7,7 +7,7 @@ body{
 	padding-bottom: 60px;
 }
 
-.bouton, .connexion{
+.lien, .connexion{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;
 	background-color: White;
@@ -19,12 +19,25 @@ body{
 	padding-right:15px;
 	
 }
-.bouton { /*bouton lien header */
+.lien{ /*bouton lien header */
 	border-right:solid 1px LightGrey		 
 }
 
 .connexion {
 	border-left:solid 1px LightGrey 	;
+}
+
+.bouton{
+	font-family: 'Quicksand', 'OpenSans',sans-serif;
+	background-color: White;
+	border:1px solid Grey;
+	padding:6px;
+	
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+	margin-bottom:10px;
+	border-radius: 5px;
 }
 
 /*HEADER*/
@@ -52,6 +65,9 @@ body{
 .element_header:nth-child(1){
 	text-align: left;
 	flex:1;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
 }
 
 .element_header:nth-child(2){
@@ -121,6 +137,35 @@ ul, li{  /*panier liste*/
        margin: 0;
 	width:100%;
 }
+#table_panier{
+	width:100%;
+	display: flex;
+	flex-direction:column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#table_panier tbody {
+	display: flex;
+	flex-direction:column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	
+}
+
+#table_panier tbody tr{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	
+}
+
+#table_panier tbody td{
+	border:none;
+	min-width:100px;
+}
 
 /* FIN PANIER*/
 
@@ -158,15 +203,15 @@ ul, li{  /*panier liste*/
 }
 
 
-.searchfield{  /*pour fichier recherche*/
-	
+.searchfield{  
 	width:100%;
+	display : flex;
+	text-align : center;
 	justify-content:center;
 	align-items:center;
 }
 
-#bouton_recherche
-{
+#bouton_recherche{
 	display : flex;
 	text-align : center;
 	font-family: 'Quicksand', sans-serif;
@@ -186,6 +231,18 @@ ul, li{  /*panier liste*/
 /*fin barre de recherche*/
 
 /*formulaire connexion*/
+#form_connexion{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;		 
+	align-items: center;
+	#background: Gainsboro ; 
+	margin:auto;
+	border: 2px solid LightGrey;
+	text-align: center;
+}
+
+
 #form{
 	display:none;
 	flex-direction: column;
@@ -205,12 +262,6 @@ ul, li{  /*panier liste*/
 	margin-top: 30px;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: bold;
-}
-
-table
-{
-	margin: auto;
-	margin-top: 10px;
 }
 
 .buttonok
@@ -248,9 +299,14 @@ table{
 
 .centre{
 	text-align: center;
-	justify-content: center;		 
+
+}
+td {
+	display: flex;
+	flex-direction:column;
 	align-items: center;
 }
+
 
 #error{
 	color: red;
@@ -364,6 +420,7 @@ footer
 	margin-top:3%;
 	padding-bottom:3%;
 }
+
 #contact{
 	font-family: 'Quicksand', 'OpenSans',sans-serif;
 	font-size:1.2em;

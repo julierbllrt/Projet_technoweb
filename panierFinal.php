@@ -62,23 +62,29 @@
 echo '<? encoding="utf-8"?>';?>
 
 <html>
+	
+
 	<head>
 		<?php include('head.php'); ?>
-		<title>Votre panier</title>
-	</head>
-	<body>
 		<style>
-			<?php include('css/main.css'); ?>
+				<?php include('css/main.css');?>
 		</style>
 		
+		<?phpinclude('carrousel.php');
+				include('section.php'); ?>
+		
+	</head>
+	<body>
+	
 		<?php include('header.php'); ?>
-
-
-		<form method="post" action="panierFinal.php">
-			<table style="width: 400px">
+		
+		<section id = "page">
+			<form  method="post" action="panierFinal.php">
+			<table id="table_panier" >
 				<tr>
-					<td colspan="5">Votre panier</td>
+					<td>Votre panier</td>
 				</tr>
+				
 				<tr>
 					<td>ProduitID</td>
 					<td>Marque</td>
@@ -100,29 +106,33 @@ echo '<? encoding="utf-8"?>';?>
 						else{
 						       for ($i=0 ;$i < $nbArticles ; $i++){
 								echo "<tr>";
-								echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['ProduitID'][$i])."</ td>";
-								echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['Marque'][$i])."</ td>";
-								echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['magasinmontre']['quantite'][$i])."\"/></td>";
-								echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['prix'][$i])."</td>";
-								echo "<td><a href=\"".htmlspecialchars("panierFinal.php?action=suppression&l=".rawurlencode($_SESSION['magasinmontre']['ProduitID'][$i]))."\">Supprimer</a></td>";
+									echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['ProduitID'][$i])."</ td>";
+									echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['Marque'][$i])."</ td>";
+									echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['magasinmontre']['quantite'][$i])."\"/></td>";
+									echo "<td>".htmlspecialchars($_SESSION['magasinmontre']['prix'][$i])."</td>";
+									echo "<td><a href=\"".htmlspecialchars("panierFinal.php?action=suppression&l=".rawurlencode($_SESSION['magasinmontre']['ProduitID'][$i]))."\">Supprimer</a></td>";
 								echo "</tr>";
 						      }
-						      echo "<tr><td colspan=\"2\"> </td>";
-						      echo "<td colspan=\"3\">";
-						      echo "Total : ".MontantGlobal();
-						      echo "</td></tr>";
+							echo "<tr><td></td><td></td><td></td>";
+								echo "<td colspan=\"4\">";
+								echo "Total : ".MontantGlobal();
+							echo "</td><td></td></tr>";
 
-						      echo "<tr><td colspan=\"5\">";
-						      echo "<input type=\"submit\" value=\"Rafraichir\"/>";
-						      echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
-
-						      echo "</td></tr>";
+							echo "<tr><td colspan=\"5\">";
+								echo "<input type=\"submit\" value=\"Rafraichir\"/>";
+								echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
+							echo "</td></tr>";
 					   }
 				}
 				?>
 
-				<?php include('footer.php'); ?>
+				
 			</table>
 		</form>
+		</section>
+		
+		<?php include('footer.php'); ?>
 	</body>
+	
+
 </html>

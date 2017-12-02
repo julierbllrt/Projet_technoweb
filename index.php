@@ -47,11 +47,7 @@ if(!empty($_GET['action_getconnexion'])){
 		<?php include('head.php'); ?>
 		<style>
 				<?php include('css/main.css');?>
-		</style>
-		
-		<?phpinclude('carrousel.php');
-				include('section.php'); ?>
-		
+		</style>		
 	</head>
 	<body>
 	

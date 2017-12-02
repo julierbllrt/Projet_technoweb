@@ -35,7 +35,7 @@
 				<td><input type="password" name="confirmation" size="40"/></td>
 			</tr>
 			<tr>
-				<td><input class="centre" class="bouton" type="submit"/> </td>	
+				<td><input  class="bouton centre" type="submit"/> </td>	
 			</tr>
 			
 		</tbody>

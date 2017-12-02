@@ -3,7 +3,10 @@
 
 	<div class="element_header">
 		<form   id="boutonproduit" method="post"  action="index.php?action_produit=detail&montreId" > 
-			<input class="bouton"  id="bouton_produit" type="submit" value="Produit" />
+			<input class="lien"  id="bouton_produit" type="submit" value="Produit" />
+		</form>
+		<form id="form_search" method="post" action="index.php?action_search=search">
+			<input class="lien" type="submit" value="Recherche"/>
 		</form>
 		<?php ?>
 	</div>
@@ -14,10 +17,7 @@
 	
 	<div class="element_header">
 		
-	<form id="form_search" method="post" action="index.php?action_search=search">
-	<input class="connexion" type="submit" value="Recherche"/></form>
-
-	</form>
+		
 		<?php
 			
 			if (isset($_SESSION['pseudo'])) {
@@ -25,7 +25,7 @@
 				echo '<a href="./php/logout.php">Déconnexion</a>';
 			}
 			else{
-				echo '<form  id="form_connexion" method="POST" action="index.php?action_getconnexion=getconnexion">
+				echo '<form  id="form_search" method="POST" action="index.php?action_getconnexion=getconnexion">
 				<input class="connexion" type="submit" value="Connexion"/></form>';
 				
 				
